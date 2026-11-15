@@ -48,10 +48,10 @@ async function startServer() {
   });
 }
 
-// Only start standalone HTTP & Socket.IO server if not in Vercel serverless environment
-if (!process.env.VERCEL) {
+// Only start standalone HTTP & Socket.IO server when executed directly (node src/server.js)
+// In Vercel serverless environments, Vercel invokes the exported app directly
+if (require.main === module) {
   startServer();
 }
 
-// Export app for Vercel Serverless Function execution
 module.exports = app;

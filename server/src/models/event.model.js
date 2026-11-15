@@ -215,8 +215,6 @@ const eventSchema = new mongoose.Schema(
 );
 
 eventSchema.index({ title: 'text', description: 'text', tags: 'text' });
-eventSchema.index({ slug: 1 });
-eventSchema.index({ organizationId: 1 });
 eventSchema.index({ date: 1, status: 1 });
 eventSchema.index({ status: 1, date: 1 });
 eventSchema.index({ organizerType: 1, status: 1 });

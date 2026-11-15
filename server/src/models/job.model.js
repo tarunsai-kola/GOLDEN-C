@@ -139,8 +139,6 @@ const jobSchema = new mongoose.Schema(
 );
 
 jobSchema.index({ title: 'text', requiredSkills: 'text', description: 'text' });
-jobSchema.index({ slug: 1 });
-jobSchema.index({ organizationId: 1 });
 jobSchema.index({ status: 1, employmentType: 1, workplaceType: 1 });
 jobSchema.index({
   status: 1,

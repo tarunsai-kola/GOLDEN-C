@@ -60,7 +60,6 @@ const organizationSchema = new mongoose.Schema(
 );
 
 organizationSchema.index({ name: 'text', location: 'text' });
-organizationSchema.index({ slug: 1 });
 organizationSchema.index({ createdBy: 1 });
 organizationSchema.index({ location: 1 });
 organizationSchema.index({ status: 1 });
