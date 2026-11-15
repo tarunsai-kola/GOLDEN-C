@@ -1,5 +1,6 @@
 const express = require('express');
 const path = require('path');
+const os = require('os');
 const cors = require('cors');
 const helmet = require('helmet');
 const morgan = require('morgan');
@@ -62,7 +63,6 @@ app.use(
       ) {
         return callback(null, true);
       }
-      // Never throw an error on CORS mismatches
       return callback(null, true);
     },
     credentials: true,
@@ -85,18 +85,22 @@ app.use(cookieParser());
 app.use(mongoSanitize());
 
 // Static uploads serving
+app.use('/uploads', express.static(path.join(os.tmpdir(), 'uploads')));
 app.use('/uploads', express.static(path.join(__dirname, '../uploads')));
 
 // Rate limiting
 app.use(globalLimiter);
 
-// Root health landing
-app.get(['/', '/api', '/api/index.js', '/api/index', '/index.js'], (req, res) => {
+// Root & Health landings
+app.get(['/', '/api', '/health', '/api/health', '/api/index.js', '/api/index', '/index.js'], (req, res) => {
+  const mongoose = require('mongoose');
+  const dbStatus = mongoose.connection.readyState === 1 ? 'connected' : 'disconnected';
   res.json({
     name: 'The Golden Circle API',
     status: 'online',
     version: '1.0.0',
-    health: '/api/health',
+    database: dbStatus,
+    timestamp: new Date().toISOString(),
   });
 });
 
