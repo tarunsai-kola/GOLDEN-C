@@ -1,0 +1,18 @@
+[
+  {
+    "_id": "6af88d237911352868a2701d",
+    "key": "platform_industries",
+    "__v": 0,
+    "category": "discovery",
+    "createdAt": "2026-11-14T16:32:35.801Z",
+    "updatedAt": "2026-11-14T16:39:28.512Z",
+    "updatedBy": "6af88ebe988701a973b2f8da",
+    "values": [
+      "Artificial Intelligence",
+      "CleanTech",
+      "BioTech",
+      "FinTech",
+      "SpaceTech"
+    ]
+  }
+]

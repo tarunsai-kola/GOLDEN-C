@@ -1,0 +1,227 @@
+[
+  {
+    "_id": "6af82e289cdbdb654cb394e2",
+    "eventId": "6af82e289cdbdb654cb394bf",
+    "userId": "6af82e269cdbdb654cb3949e",
+    "status": "cancelled",
+    "attended": false,
+    "answers": {
+      "background": "AI Engineer"
+    },
+    "registeredAt": "2026-11-14T09:47:20.432Z",
+    "createdAt": "2026-11-14T09:47:20.433Z",
+    "updatedAt": "2026-11-14T09:47:20.563Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af82e289cdbdb654cb394f2",
+    "eventId": "6af82e289cdbdb654cb394bf",
+    "userId": "6af82e279cdbdb654cb394a5",
+    "status": "confirmed",
+    "attended": false,
+    "registeredAt": "2026-11-14T09:47:20.510Z",
+    "createdAt": "2026-11-14T09:47:20.511Z",
+    "updatedAt": "2026-11-14T09:47:20.572Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af82e639cdbdb654cb397c0",
+    "eventId": "6af82e629cdbdb654cb3979b",
+    "userId": "6af82e619cdbdb654cb3977a",
+    "status": "cancelled",
+    "attended": false,
+    "answers": {
+      "background": "AI Engineer"
+    },
+    "registeredAt": "2026-11-14T09:48:19.042Z",
+    "createdAt": "2026-11-14T09:48:19.042Z",
+    "updatedAt": "2026-11-14T09:48:19.119Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af82e639cdbdb654cb397d0",
+    "eventId": "6af82e629cdbdb654cb3979b",
+    "userId": "6af82e619cdbdb654cb39781",
+    "status": "confirmed",
+    "attended": false,
+    "registeredAt": "2026-11-14T09:48:19.080Z",
+    "createdAt": "2026-11-14T09:48:19.081Z",
+    "updatedAt": "2026-11-14T09:48:19.126Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af83283f78dd60b4a10c721",
+    "eventId": "6af83282f78dd60b4a10c6fa",
+    "userId": "6af83281f78dd60b4a10c6d9",
+    "status": "cancelled",
+    "attended": false,
+    "answers": {
+      "background": "AI Engineer"
+    },
+    "registeredAt": "2026-11-14T10:05:55.022Z",
+    "createdAt": "2026-11-14T10:05:55.022Z",
+    "updatedAt": "2026-11-14T10:05:55.153Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af83283f78dd60b4a10c731",
+    "eventId": "6af83282f78dd60b4a10c6fa",
+    "userId": "6af83281f78dd60b4a10c6e0",
+    "status": "confirmed",
+    "attended": false,
+    "registeredAt": "2026-11-14T10:05:55.100Z",
+    "createdAt": "2026-11-14T10:05:55.101Z",
+    "updatedAt": "2026-11-14T10:05:55.162Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af832b6f78dd60b4a10c8c8",
+    "eventId": "6af832b6f78dd60b4a10c89f",
+    "userId": "6af832b5f78dd60b4a10c87e",
+    "status": "cancelled",
+    "attended": false,
+    "answers": {
+      "background": "AI Engineer"
+    },
+    "registeredAt": "2026-11-14T10:06:46.941Z",
+    "createdAt": "2026-11-14T10:06:46.941Z",
+    "updatedAt": "2026-11-14T10:06:47.023Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af832b6f78dd60b4a10c8d8",
+    "eventId": "6af832b6f78dd60b4a10c89f",
+    "userId": "6af832b5f78dd60b4a10c885",
+    "status": "confirmed",
+    "attended": false,
+    "registeredAt": "2026-11-14T10:06:46.980Z",
+    "createdAt": "2026-11-14T10:06:46.981Z",
+    "updatedAt": "2026-11-14T10:06:47.033Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af836458fa3e27bd1cba159",
+    "eventId": "6af836458fa3e27bd1cba12e",
+    "userId": "6af836448fa3e27bd1cba10d",
+    "status": "cancelled",
+    "attended": false,
+    "answers": {
+      "background": "AI Engineer"
+    },
+    "registeredAt": "2026-11-14T10:21:57.049Z",
+    "createdAt": "2026-11-14T10:21:57.049Z",
+    "updatedAt": "2026-11-14T10:21:57.100Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af836458fa3e27bd1cba169",
+    "eventId": "6af836458fa3e27bd1cba12e",
+    "userId": "6af836448fa3e27bd1cba114",
+    "status": "confirmed",
+    "attended": false,
+    "registeredAt": "2026-11-14T10:21:57.081Z",
+    "createdAt": "2026-11-14T10:21:57.081Z",
+    "updatedAt": "2026-11-14T10:21:57.103Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af836aa8fa3e27bd1cba43e",
+    "eventId": "6af836aa8fa3e27bd1cba411",
+    "userId": "6af836a98fa3e27bd1cba3f0",
+    "status": "cancelled",
+    "attended": false,
+    "answers": {
+      "background": "AI Engineer"
+    },
+    "registeredAt": "2026-11-14T10:23:38.643Z",
+    "createdAt": "2026-11-14T10:23:38.644Z",
+    "updatedAt": "2026-11-14T10:23:38.675Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af836aa8fa3e27bd1cba44e",
+    "eventId": "6af836aa8fa3e27bd1cba411",
+    "userId": "6af836aa8fa3e27bd1cba3f7",
+    "status": "confirmed",
+    "attended": false,
+    "registeredAt": "2026-11-14T10:23:38.659Z",
+    "createdAt": "2026-11-14T10:23:38.659Z",
+    "updatedAt": "2026-11-14T10:23:38.678Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af83a33feb9751e7dac7038",
+    "eventId": "6af83a33feb9751e7dac7002",
+    "userId": "6af83a32feb9751e7dac6fe1",
+    "status": "cancelled",
+    "attended": false,
+    "answers": {
+      "background": "AI Engineer"
+    },
+    "registeredAt": "2026-11-14T10:38:43.415Z",
+    "createdAt": "2026-11-14T10:38:43.415Z",
+    "updatedAt": "2026-11-14T10:38:43.467Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af83a33feb9751e7dac704e",
+    "eventId": "6af83a33feb9751e7dac7002",
+    "userId": "6af83a32feb9751e7dac6fe8",
+    "status": "confirmed",
+    "attended": false,
+    "registeredAt": "2026-11-14T10:38:43.447Z",
+    "createdAt": "2026-11-14T10:38:43.448Z",
+    "updatedAt": "2026-11-14T10:38:43.471Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af83a78feb9751e7dac7412",
+    "eventId": "6af83a78feb9751e7dac73da",
+    "userId": "6af83a77feb9751e7dac73b9",
+    "status": "cancelled",
+    "attended": false,
+    "answers": {
+      "background": "AI Engineer"
+    },
+    "registeredAt": "2026-11-14T10:39:52.375Z",
+    "createdAt": "2026-11-14T10:39:52.375Z",
+    "updatedAt": "2026-11-14T10:39:52.412Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af83a78feb9751e7dac7428",
+    "eventId": "6af83a78feb9751e7dac73da",
+    "userId": "6af83a77feb9751e7dac73c0",
+    "status": "confirmed",
+    "attended": false,
+    "registeredAt": "2026-11-14T10:39:52.394Z",
+    "createdAt": "2026-11-14T10:39:52.394Z",
+    "updatedAt": "2026-11-14T10:39:52.414Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af88d818f2ce9abec72346a",
+    "eventId": "6af88d818f2ce9abec723430",
+    "userId": "6af88d808f2ce9abec72340f",
+    "status": "cancelled",
+    "attended": false,
+    "answers": {
+      "background": "AI Engineer"
+    },
+    "registeredAt": "2026-11-14T16:34:09.385Z",
+    "createdAt": "2026-11-14T16:34:09.385Z",
+    "updatedAt": "2026-11-14T16:34:09.434Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af88d818f2ce9abec723480",
+    "eventId": "6af88d818f2ce9abec723430",
+    "userId": "6af88d808f2ce9abec723416",
+    "status": "confirmed",
+    "attended": false,
+    "registeredAt": "2026-11-14T16:34:09.415Z",
+    "createdAt": "2026-11-14T16:34:09.415Z",
+    "updatedAt": "2026-11-14T16:34:09.437Z",
+    "__v": 0
+  }
+]

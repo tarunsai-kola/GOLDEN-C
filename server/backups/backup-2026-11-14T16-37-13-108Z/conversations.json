@@ -1,0 +1,192 @@
+[
+  {
+    "_id": "6af836238fa3e27bd1cb9e58",
+    "participants": [
+      "6af836228fa3e27bd1cb9df5",
+      "6af836228fa3e27bd1cb9dfa"
+    ],
+    "lastMessage": "6af836238fa3e27bd1cb9e62",
+    "lastMessageAt": "2026-11-14T10:21:23.607Z",
+    "mutedBy": [],
+    "blockedBy": [],
+    "isArchivedBy": [],
+    "unreadCounts": {
+      "6af836228fa3e27bd1cb9df5": 0,
+      "6af836228fa3e27bd1cb9dfa": 0
+    },
+    "createdAt": "2026-11-14T10:21:23.590Z",
+    "updatedAt": "2026-11-14T10:21:23.678Z",
+    "__v": 4
+  },
+  {
+    "_id": "6af836548fa3e27bd1cba27f",
+    "participants": [
+      "6af836528fa3e27bd1cba21c",
+      "6af836538fa3e27bd1cba221"
+    ],
+    "lastMessage": "6af836548fa3e27bd1cba289",
+    "lastMessageAt": "2026-11-14T10:22:12.354Z",
+    "mutedBy": [],
+    "blockedBy": [],
+    "isArchivedBy": [],
+    "unreadCounts": {
+      "6af836528fa3e27bd1cba21c": 0,
+      "6af836538fa3e27bd1cba221": 0
+    },
+    "createdAt": "2026-11-14T10:22:12.341Z",
+    "updatedAt": "2026-11-14T10:22:12.417Z",
+    "__v": 4
+  },
+  {
+    "_id": "6af8369c8fa3e27bd1cba31c",
+    "participants": [
+      "6af8369a8fa3e27bd1cba2b9",
+      "6af8369b8fa3e27bd1cba2be"
+    ],
+    "lastMessage": "6af8369c8fa3e27bd1cba326",
+    "lastMessageAt": "2026-11-14T10:23:24.397Z",
+    "mutedBy": [],
+    "blockedBy": [],
+    "isArchivedBy": [],
+    "unreadCounts": {
+      "6af8369a8fa3e27bd1cba2b9": 0,
+      "6af8369b8fa3e27bd1cba2be": 0
+    },
+    "createdAt": "2026-11-14T10:23:24.384Z",
+    "updatedAt": "2026-11-14T10:23:24.457Z",
+    "__v": 4
+  },
+  {
+    "_id": "6af83a40feb9751e7dac717a",
+    "participants": [
+      "6af83a3ffeb9751e7dac7101",
+      "6af83a3ffeb9751e7dac7106"
+    ],
+    "lastMessage": "6af83a40feb9751e7dac7184",
+    "lastMessageAt": "2026-11-14T10:38:56.723Z",
+    "mutedBy": [],
+    "blockedBy": [],
+    "isArchivedBy": [],
+    "unreadCounts": {
+      "6af83a3ffeb9751e7dac7101": 0,
+      "6af83a3ffeb9751e7dac7106": 0
+    },
+    "createdAt": "2026-11-14T10:38:56.710Z",
+    "updatedAt": "2026-11-14T10:38:56.781Z",
+    "__v": 4
+  },
+  {
+    "_id": "6af83a6afeb9751e7dac72e5",
+    "participants": [
+      "6af83a69feb9751e7dac726c",
+      "6af83a69feb9751e7dac7271"
+    ],
+    "lastMessage": "6af83a6afeb9751e7dac72ef",
+    "lastMessageAt": "2026-11-14T10:39:38.982Z",
+    "mutedBy": [],
+    "blockedBy": [],
+    "isArchivedBy": [],
+    "unreadCounts": {
+      "6af83a69feb9751e7dac726c": 0,
+      "6af83a69feb9751e7dac7271": 0
+    },
+    "createdAt": "2026-11-14T10:39:38.970Z",
+    "updatedAt": "2026-11-14T10:39:39.038Z",
+    "__v": 4
+  },
+  {
+    "_id": "6af88d23b1935732ffa58ec9",
+    "participants": [
+      "6af88d22b1935732ffa58e0f",
+      "6af88d23b1935732ffa58e14"
+    ],
+    "lastMessage": "6af88d23b1935732ffa58ed0",
+    "lastMessageAt": "2026-11-14T16:32:35.783Z",
+    "mutedBy": [],
+    "blockedBy": [],
+    "isArchivedBy": [],
+    "unreadCounts": {
+      "6af88d22b1935732ffa58e0f": 0,
+      "6af88d23b1935732ffa58e14": 1
+    },
+    "createdAt": "2026-11-14T16:32:35.773Z",
+    "updatedAt": "2026-11-14T16:32:35.783Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af88d3eb1935732ffa58faa",
+    "participants": [
+      "6af88d3db1935732ffa58ef0",
+      "6af88d3eb1935732ffa58ef5"
+    ],
+    "lastMessage": "6af88d3eb1935732ffa58fb1",
+    "lastMessageAt": "2026-11-14T16:33:02.730Z",
+    "mutedBy": [],
+    "blockedBy": [],
+    "isArchivedBy": [],
+    "unreadCounts": {
+      "6af88d3db1935732ffa58ef0": 0,
+      "6af88d3eb1935732ffa58ef5": 1
+    },
+    "createdAt": "2026-11-14T16:33:02.720Z",
+    "updatedAt": "2026-11-14T16:33:02.730Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af88d648f2ce9abec723141",
+    "participants": [
+      "6af88d638f2ce9abec723087",
+      "6af88d648f2ce9abec72308c"
+    ],
+    "lastMessage": "6af88d648f2ce9abec723148",
+    "lastMessageAt": "2026-11-14T16:33:40.811Z",
+    "mutedBy": [],
+    "blockedBy": [],
+    "isArchivedBy": [],
+    "unreadCounts": {
+      "6af88d638f2ce9abec723087": 0,
+      "6af88d648f2ce9abec72308c": 1
+    },
+    "createdAt": "2026-11-14T16:33:40.801Z",
+    "updatedAt": "2026-11-14T16:33:40.811Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af88d8d8f2ce9abec7235ac",
+    "participants": [
+      "6af88d8b8f2ce9abec723533",
+      "6af88d8c8f2ce9abec723538"
+    ],
+    "lastMessage": "6af88d8d8f2ce9abec7235b6",
+    "lastMessageAt": "2026-11-14T16:34:21.412Z",
+    "mutedBy": [],
+    "blockedBy": [],
+    "isArchivedBy": [],
+    "unreadCounts": {
+      "6af88d8b8f2ce9abec723533": 0,
+      "6af88d8c8f2ce9abec723538": 0
+    },
+    "createdAt": "2026-11-14T16:34:21.398Z",
+    "updatedAt": "2026-11-14T16:34:21.469Z",
+    "__v": 4
+  },
+  {
+    "_id": "6af88d9a8f2ce9abec723701",
+    "participants": [
+      "6af88d998f2ce9abec723647",
+      "6af88d9a8f2ce9abec72364c"
+    ],
+    "lastMessage": "6af88d9a8f2ce9abec723708",
+    "lastMessageAt": "2026-11-14T16:34:34.945Z",
+    "mutedBy": [],
+    "blockedBy": [],
+    "isArchivedBy": [],
+    "unreadCounts": {
+      "6af88d998f2ce9abec723647": 0,
+      "6af88d9a8f2ce9abec72364c": 1
+    },
+    "createdAt": "2026-11-14T16:34:34.936Z",
+    "updatedAt": "2026-11-14T16:34:34.945Z",
+    "__v": 0
+  }
+]

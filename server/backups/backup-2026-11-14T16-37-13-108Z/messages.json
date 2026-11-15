@@ -1,0 +1,148 @@
+[
+  {
+    "_id": "6af836238fa3e27bd1cb9e62",
+    "conversationId": "6af836238fa3e27bd1cb9e58",
+    "sender": "6af836228fa3e27bd1cb9df5",
+    "content": "Hello Elena, excited to collaborate on Golden Circle!",
+    "readBy": [
+      "6af836228fa3e27bd1cb9df5",
+      "6af836228fa3e27bd1cb9dfa"
+    ],
+    "isReported": true,
+    "reportReason": "Testing report abusive message endpoint",
+    "createdAt": "2026-11-14T10:21:23.607Z",
+    "updatedAt": "2026-11-14T10:21:23.656Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af836548fa3e27bd1cba289",
+    "conversationId": "6af836548fa3e27bd1cba27f",
+    "sender": "6af836528fa3e27bd1cba21c",
+    "content": "Hello Elena, excited to collaborate on Golden Circle!",
+    "readBy": [
+      "6af836528fa3e27bd1cba21c",
+      "6af836538fa3e27bd1cba221"
+    ],
+    "isReported": true,
+    "reportReason": "Testing report abusive message endpoint",
+    "createdAt": "2026-11-14T10:22:12.353Z",
+    "updatedAt": "2026-11-14T10:22:12.400Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af8369c8fa3e27bd1cba326",
+    "conversationId": "6af8369c8fa3e27bd1cba31c",
+    "sender": "6af8369a8fa3e27bd1cba2b9",
+    "content": "Hello Elena, excited to collaborate on Golden Circle!",
+    "readBy": [
+      "6af8369a8fa3e27bd1cba2b9",
+      "6af8369b8fa3e27bd1cba2be"
+    ],
+    "isReported": true,
+    "reportReason": "Testing report abusive message endpoint",
+    "createdAt": "2026-11-14T10:23:24.397Z",
+    "updatedAt": "2026-11-14T10:23:24.438Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af83a40feb9751e7dac7184",
+    "conversationId": "6af83a40feb9751e7dac717a",
+    "sender": "6af83a3ffeb9751e7dac7101",
+    "content": "Hello Elena, excited to collaborate on Golden Circle!",
+    "readBy": [
+      "6af83a3ffeb9751e7dac7101",
+      "6af83a3ffeb9751e7dac7106"
+    ],
+    "isReported": true,
+    "reportReason": "Testing report abusive message endpoint",
+    "createdAt": "2026-11-14T10:38:56.723Z",
+    "updatedAt": "2026-11-14T10:38:56.764Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af83a6afeb9751e7dac72ef",
+    "conversationId": "6af83a6afeb9751e7dac72e5",
+    "sender": "6af83a69feb9751e7dac726c",
+    "content": "Hello Elena, excited to collaborate on Golden Circle!",
+    "readBy": [
+      "6af83a69feb9751e7dac726c",
+      "6af83a69feb9751e7dac7271"
+    ],
+    "isReported": true,
+    "reportReason": "Testing report abusive message endpoint",
+    "createdAt": "2026-11-14T10:39:38.981Z",
+    "updatedAt": "2026-11-14T10:39:39.021Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af88d23b1935732ffa58ed0",
+    "conversationId": "6af88d23b1935732ffa58ec9",
+    "sender": "6af88d22b1935732ffa58e0f",
+    "content": "Confidential private message",
+    "readBy": [
+      "6af88d22b1935732ffa58e0f"
+    ],
+    "isReported": true,
+    "reportReason": "Abusive language test",
+    "createdAt": "2026-11-14T16:32:35.782Z",
+    "updatedAt": "2026-11-14T16:32:35.794Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af88d3eb1935732ffa58fb1",
+    "conversationId": "6af88d3eb1935732ffa58faa",
+    "sender": "6af88d3db1935732ffa58ef0",
+    "content": "Confidential private message",
+    "readBy": [
+      "6af88d3db1935732ffa58ef0"
+    ],
+    "isReported": true,
+    "reportReason": "Abusive language test",
+    "createdAt": "2026-11-14T16:33:02.729Z",
+    "updatedAt": "2026-11-14T16:33:02.739Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af88d648f2ce9abec723148",
+    "conversationId": "6af88d648f2ce9abec723141",
+    "sender": "6af88d638f2ce9abec723087",
+    "content": "Confidential private message",
+    "readBy": [
+      "6af88d638f2ce9abec723087"
+    ],
+    "isReported": true,
+    "reportReason": "Abusive language test",
+    "createdAt": "2026-11-14T16:33:40.810Z",
+    "updatedAt": "2026-11-14T16:33:40.821Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af88d8d8f2ce9abec7235b6",
+    "conversationId": "6af88d8d8f2ce9abec7235ac",
+    "sender": "6af88d8b8f2ce9abec723533",
+    "content": "Hello Elena, excited to collaborate on Golden Circle!",
+    "readBy": [
+      "6af88d8b8f2ce9abec723533",
+      "6af88d8c8f2ce9abec723538"
+    ],
+    "isReported": true,
+    "reportReason": "Testing report abusive message endpoint",
+    "createdAt": "2026-11-14T16:34:21.411Z",
+    "updatedAt": "2026-11-14T16:34:21.452Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af88d9a8f2ce9abec723708",
+    "conversationId": "6af88d9a8f2ce9abec723701",
+    "sender": "6af88d998f2ce9abec723647",
+    "content": "Confidential private message",
+    "readBy": [
+      "6af88d998f2ce9abec723647"
+    ],
+    "isReported": true,
+    "reportReason": "Abusive language test",
+    "createdAt": "2026-11-14T16:34:34.944Z",
+    "updatedAt": "2026-11-14T16:34:34.954Z",
+    "__v": 0
+  }
+]

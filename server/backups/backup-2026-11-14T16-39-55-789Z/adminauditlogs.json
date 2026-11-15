@@ -1,0 +1,1430 @@
+[
+  {
+    "_id": "6af88d23b1935732ffa58e2c",
+    "adminId": "6af88d22b1935732ffa58e0a",
+    "adminRole": "super_admin",
+    "action": "user_status_update",
+    "targetType": "user",
+    "targetId": "6af88d22b1935732ffa58e0f",
+    "reason": "Automated policy violation test",
+    "details": {
+      "previousStatus": "active",
+      "newStatus": "suspended"
+    },
+    "ipAddress": "::1",
+    "createdAt": "2026-11-14T16:32:35.582Z",
+    "updatedAt": "2026-11-14T16:32:35.582Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af88d23b1935732ffa58e38",
+    "adminId": "6af88d22b1935732ffa58e0a",
+    "adminRole": "super_admin",
+    "action": "user_status_update",
+    "targetType": "user",
+    "targetId": "6af88d22b1935732ffa58e0f",
+    "reason": "Reinstated after review",
+    "details": {
+      "previousStatus": "suspended",
+      "newStatus": "active"
+    },
+    "ipAddress": "::1",
+    "createdAt": "2026-11-14T16:32:35.597Z",
+    "updatedAt": "2026-11-14T16:32:35.597Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af88d23b1935732ffa58e41",
+    "adminId": "6af88d22b1935732ffa58e0a",
+    "adminRole": "super_admin",
+    "action": "user_role_update",
+    "targetType": "user",
+    "targetId": "6af88d22b1935732ffa58e0f",
+    "reason": "",
+    "details": {
+      "previous": {
+        "role": "user",
+        "adminRole": null
+      },
+      "updated": {
+        "role": "user",
+        "adminRole": "moderator"
+      }
+    },
+    "ipAddress": "::1",
+    "createdAt": "2026-11-14T16:32:35.606Z",
+    "updatedAt": "2026-11-14T16:32:35.606Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af88d23b1935732ffa58e5c",
+    "adminId": "6af88d22b1935732ffa58e0a",
+    "adminRole": "super_admin",
+    "action": "organization_verification",
+    "targetType": "organization",
+    "targetId": "6af88d23b1935732ffa58e45",
+    "reason": "Verified Delaware C-Corp documentation",
+    "details": {
+      "status": "approved",
+      "isVerified": true
+    },
+    "ipAddress": "::1",
+    "createdAt": "2026-11-14T16:32:35.644Z",
+    "updatedAt": "2026-11-14T16:32:35.644Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af88d23b1935732ffa58e6a",
+    "adminId": "6af88d22b1935732ffa58e0a",
+    "adminRole": "super_admin",
+    "action": "event_moderation",
+    "targetType": "event",
+    "targetId": "6af88d23b1935732ffa58e65",
+    "reason": "",
+    "details": {
+      "previous": {
+        "status": "Submitted",
+        "isFeatured": false
+      },
+      "updated": {
+        "status": "Published",
+        "isFeatured": true
+      }
+    },
+    "ipAddress": "::1",
+    "createdAt": "2026-11-14T16:32:35.666Z",
+    "updatedAt": "2026-11-14T16:32:35.666Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af88d23b1935732ffa58e83",
+    "adminId": "6af88d22b1935732ffa58e0a",
+    "adminRole": "super_admin",
+    "action": "job_moderation",
+    "targetType": "job",
+    "targetId": "6af88d23b1935732ffa58e73",
+    "reason": "",
+    "details": {
+      "previous": {
+        "status": "Published",
+        "isFeatured": false
+      },
+      "updated": {
+        "status": "Published",
+        "isFeatured": true
+      }
+    },
+    "ipAddress": "::1",
+    "createdAt": "2026-11-14T16:32:35.692Z",
+    "updatedAt": "2026-11-14T16:32:35.692Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af88d23b1935732ffa58e89",
+    "adminId": "6af88d22b1935732ffa58e0a",
+    "adminRole": "super_admin",
+    "action": "cms_create_article",
+    "targetType": "cms",
+    "targetId": "6af88d23b1935732ffa58e87",
+    "reason": "Published editorial article",
+    "details": {
+      "title": "From Zero to Scale: The HyperScale Story 1794673954101",
+      "type": "story"
+    },
+    "ipAddress": "::1",
+    "createdAt": "2026-11-14T16:32:35.700Z",
+    "updatedAt": "2026-11-14T16:32:35.700Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af88d23b1935732ffa58e93",
+    "adminId": "6af88d22b1935732ffa58e0a",
+    "adminRole": "super_admin",
+    "action": "cms_update_article",
+    "targetType": "cms",
+    "targetId": "6af88d23b1935732ffa58e87",
+    "reason": "Updated editorial article",
+    "details": {
+      "title": "Updated HyperScale Story 1794673954101"
+    },
+    "ipAddress": "::1",
+    "createdAt": "2026-11-14T16:32:35.713Z",
+    "updatedAt": "2026-11-14T16:32:35.713Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af88d23b1935732ffa58e97",
+    "adminId": "6af88d22b1935732ffa58e0a",
+    "adminRole": "super_admin",
+    "action": "cms_delete_article",
+    "targetType": "cms",
+    "targetId": "6af88d23b1935732ffa58e87",
+    "reason": "Deleted editorial article",
+    "details": {
+      "title": "Updated HyperScale Story 1794673954101"
+    },
+    "ipAddress": "::1",
+    "createdAt": "2026-11-14T16:32:35.718Z",
+    "updatedAt": "2026-11-14T16:32:35.718Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af88d23b1935732ffa58ea7",
+    "adminId": "6af88d22b1935732ffa58e0a",
+    "adminRole": "super_admin",
+    "action": "resolve_job_report",
+    "targetType": "report",
+    "targetId": "6af88d23b1935732ffa58e9b",
+    "reason": "Warning issued to poster",
+    "details": {
+      "resolution": "reviewed",
+      "actionTaken": "none"
+    },
+    "ipAddress": "::1",
+    "createdAt": "2026-11-14T16:32:35.739Z",
+    "updatedAt": "2026-11-14T16:32:35.739Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af88d23b1935732ffa58ede",
+    "adminId": "6af88d22b1935732ffa58e0a",
+    "adminRole": "super_admin",
+    "action": "platform_config_update",
+    "targetType": "config",
+    "targetId": "platform_industries",
+    "reason": "Config modified",
+    "details": {
+      "key": "platform_industries",
+      "category": "discovery",
+      "valuesCount": 5
+    },
+    "ipAddress": "::1",
+    "createdAt": "2026-11-14T16:32:35.803Z",
+    "updatedAt": "2026-11-14T16:32:35.803Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af88d3eb1935732ffa58f0d",
+    "adminId": "6af88d3db1935732ffa58eeb",
+    "adminRole": "super_admin",
+    "action": "user_status_update",
+    "targetType": "user",
+    "targetId": "6af88d3db1935732ffa58ef0",
+    "reason": "Automated policy violation test",
+    "details": {
+      "previousStatus": "active",
+      "newStatus": "suspended"
+    },
+    "ipAddress": "::1",
+    "createdAt": "2026-11-14T16:33:02.554Z",
+    "updatedAt": "2026-11-14T16:33:02.554Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af88d3eb1935732ffa58f19",
+    "adminId": "6af88d3db1935732ffa58eeb",
+    "adminRole": "super_admin",
+    "action": "user_status_update",
+    "targetType": "user",
+    "targetId": "6af88d3db1935732ffa58ef0",
+    "reason": "Reinstated after review",
+    "details": {
+      "previousStatus": "suspended",
+      "newStatus": "active"
+    },
+    "ipAddress": "::1",
+    "createdAt": "2026-11-14T16:33:02.572Z",
+    "updatedAt": "2026-11-14T16:33:02.572Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af88d3eb1935732ffa58f22",
+    "adminId": "6af88d3db1935732ffa58eeb",
+    "adminRole": "super_admin",
+    "action": "user_role_update",
+    "targetType": "user",
+    "targetId": "6af88d3db1935732ffa58ef0",
+    "reason": "",
+    "details": {
+      "previous": {
+        "role": "user",
+        "adminRole": null
+      },
+      "updated": {
+        "role": "user",
+        "adminRole": "moderator"
+      }
+    },
+    "ipAddress": "::1",
+    "createdAt": "2026-11-14T16:33:02.584Z",
+    "updatedAt": "2026-11-14T16:33:02.584Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af88d3eb1935732ffa58f3d",
+    "adminId": "6af88d3db1935732ffa58eeb",
+    "adminRole": "super_admin",
+    "action": "organization_verification",
+    "targetType": "organization",
+    "targetId": "6af88d3eb1935732ffa58f26",
+    "reason": "Verified Delaware C-Corp documentation",
+    "details": {
+      "status": "approved",
+      "isVerified": true
+    },
+    "ipAddress": "::1",
+    "createdAt": "2026-11-14T16:33:02.610Z",
+    "updatedAt": "2026-11-14T16:33:02.610Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af88d3eb1935732ffa58f4b",
+    "adminId": "6af88d3db1935732ffa58eeb",
+    "adminRole": "super_admin",
+    "action": "event_moderation",
+    "targetType": "event",
+    "targetId": "6af88d3eb1935732ffa58f46",
+    "reason": "",
+    "details": {
+      "previous": {
+        "status": "Submitted",
+        "isFeatured": false
+      },
+      "updated": {
+        "status": "Published",
+        "isFeatured": true
+      }
+    },
+    "ipAddress": "::1",
+    "createdAt": "2026-11-14T16:33:02.628Z",
+    "updatedAt": "2026-11-14T16:33:02.628Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af88d3eb1935732ffa58f64",
+    "adminId": "6af88d3db1935732ffa58eeb",
+    "adminRole": "super_admin",
+    "action": "job_moderation",
+    "targetType": "job",
+    "targetId": "6af88d3eb1935732ffa58f54",
+    "reason": "",
+    "details": {
+      "previous": {
+        "status": "Published",
+        "isFeatured": false
+      },
+      "updated": {
+        "status": "Published",
+        "isFeatured": true
+      }
+    },
+    "ipAddress": "::1",
+    "createdAt": "2026-11-14T16:33:02.651Z",
+    "updatedAt": "2026-11-14T16:33:02.651Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af88d3eb1935732ffa58f6a",
+    "adminId": "6af88d3db1935732ffa58eeb",
+    "adminRole": "super_admin",
+    "action": "cms_create_article",
+    "targetType": "cms",
+    "targetId": "6af88d3eb1935732ffa58f68",
+    "reason": "Published editorial article",
+    "details": {
+      "title": "From Zero to Scale: The HyperScale Story 1794673981096",
+      "type": "story"
+    },
+    "ipAddress": "::1",
+    "createdAt": "2026-11-14T16:33:02.657Z",
+    "updatedAt": "2026-11-14T16:33:02.657Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af88d3eb1935732ffa58f74",
+    "adminId": "6af88d3db1935732ffa58eeb",
+    "adminRole": "super_admin",
+    "action": "cms_update_article",
+    "targetType": "cms",
+    "targetId": "6af88d3eb1935732ffa58f68",
+    "reason": "Updated editorial article",
+    "details": {
+      "title": "Updated HyperScale Story 1794673981096"
+    },
+    "ipAddress": "::1",
+    "createdAt": "2026-11-14T16:33:02.669Z",
+    "updatedAt": "2026-11-14T16:33:02.669Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af88d3eb1935732ffa58f78",
+    "adminId": "6af88d3db1935732ffa58eeb",
+    "adminRole": "super_admin",
+    "action": "cms_delete_article",
+    "targetType": "cms",
+    "targetId": "6af88d3eb1935732ffa58f68",
+    "reason": "Deleted editorial article",
+    "details": {
+      "title": "Updated HyperScale Story 1794673981096"
+    },
+    "ipAddress": "::1",
+    "createdAt": "2026-11-14T16:33:02.674Z",
+    "updatedAt": "2026-11-14T16:33:02.674Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af88d3eb1935732ffa58f88",
+    "adminId": "6af88d3db1935732ffa58eeb",
+    "adminRole": "super_admin",
+    "action": "resolve_job_report",
+    "targetType": "report",
+    "targetId": "6af88d3eb1935732ffa58f7c",
+    "reason": "Warning issued to poster",
+    "details": {
+      "resolution": "reviewed",
+      "actionTaken": "none"
+    },
+    "ipAddress": "::1",
+    "createdAt": "2026-11-14T16:33:02.691Z",
+    "updatedAt": "2026-11-14T16:33:02.691Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af88d3eb1935732ffa58fbf",
+    "adminId": "6af88d3db1935732ffa58eeb",
+    "adminRole": "super_admin",
+    "action": "platform_config_update",
+    "targetType": "config",
+    "targetId": "platform_industries",
+    "reason": "Config modified",
+    "details": {
+      "key": "platform_industries",
+      "category": "discovery",
+      "valuesCount": 5
+    },
+    "ipAddress": "::1",
+    "createdAt": "2026-11-14T16:33:02.747Z",
+    "updatedAt": "2026-11-14T16:33:02.747Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af88d648f2ce9abec7230a4",
+    "adminId": "6af88d638f2ce9abec723082",
+    "adminRole": "super_admin",
+    "action": "user_status_update",
+    "targetType": "user",
+    "targetId": "6af88d638f2ce9abec723087",
+    "reason": "Automated policy violation test",
+    "details": {
+      "previousStatus": "active",
+      "newStatus": "suspended"
+    },
+    "ipAddress": "::1",
+    "createdAt": "2026-11-14T16:33:40.618Z",
+    "updatedAt": "2026-11-14T16:33:40.618Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af88d648f2ce9abec7230b0",
+    "adminId": "6af88d638f2ce9abec723082",
+    "adminRole": "super_admin",
+    "action": "user_status_update",
+    "targetType": "user",
+    "targetId": "6af88d638f2ce9abec723087",
+    "reason": "Reinstated after review",
+    "details": {
+      "previousStatus": "suspended",
+      "newStatus": "active"
+    },
+    "ipAddress": "::1",
+    "createdAt": "2026-11-14T16:33:40.634Z",
+    "updatedAt": "2026-11-14T16:33:40.634Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af88d648f2ce9abec7230b9",
+    "adminId": "6af88d638f2ce9abec723082",
+    "adminRole": "super_admin",
+    "action": "user_role_update",
+    "targetType": "user",
+    "targetId": "6af88d638f2ce9abec723087",
+    "reason": "",
+    "details": {
+      "previous": {
+        "role": "user",
+        "adminRole": null
+      },
+      "updated": {
+        "role": "user",
+        "adminRole": "moderator"
+      }
+    },
+    "ipAddress": "::1",
+    "createdAt": "2026-11-14T16:33:40.643Z",
+    "updatedAt": "2026-11-14T16:33:40.643Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af88d648f2ce9abec7230d4",
+    "adminId": "6af88d638f2ce9abec723082",
+    "adminRole": "super_admin",
+    "action": "organization_verification",
+    "targetType": "organization",
+    "targetId": "6af88d648f2ce9abec7230bd",
+    "reason": "Verified Delaware C-Corp documentation",
+    "details": {
+      "status": "approved",
+      "isVerified": true
+    },
+    "ipAddress": "::1",
+    "createdAt": "2026-11-14T16:33:40.679Z",
+    "updatedAt": "2026-11-14T16:33:40.679Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af88d648f2ce9abec7230e2",
+    "adminId": "6af88d638f2ce9abec723082",
+    "adminRole": "super_admin",
+    "action": "event_moderation",
+    "targetType": "event",
+    "targetId": "6af88d648f2ce9abec7230dd",
+    "reason": "",
+    "details": {
+      "previous": {
+        "status": "Submitted",
+        "isFeatured": false
+      },
+      "updated": {
+        "status": "Published",
+        "isFeatured": true
+      }
+    },
+    "ipAddress": "::1",
+    "createdAt": "2026-11-14T16:33:40.698Z",
+    "updatedAt": "2026-11-14T16:33:40.698Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af88d648f2ce9abec7230fb",
+    "adminId": "6af88d638f2ce9abec723082",
+    "adminRole": "super_admin",
+    "action": "job_moderation",
+    "targetType": "job",
+    "targetId": "6af88d648f2ce9abec7230eb",
+    "reason": "",
+    "details": {
+      "previous": {
+        "status": "Published",
+        "isFeatured": false
+      },
+      "updated": {
+        "status": "Published",
+        "isFeatured": true
+      }
+    },
+    "ipAddress": "::1",
+    "createdAt": "2026-11-14T16:33:40.722Z",
+    "updatedAt": "2026-11-14T16:33:40.722Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af88d648f2ce9abec723101",
+    "adminId": "6af88d638f2ce9abec723082",
+    "adminRole": "super_admin",
+    "action": "cms_create_article",
+    "targetType": "cms",
+    "targetId": "6af88d648f2ce9abec7230ff",
+    "reason": "Published editorial article",
+    "details": {
+      "title": "From Zero to Scale: The HyperScale Story 1794674019128",
+      "type": "story"
+    },
+    "ipAddress": "::1",
+    "createdAt": "2026-11-14T16:33:40.729Z",
+    "updatedAt": "2026-11-14T16:33:40.729Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af88d648f2ce9abec72310b",
+    "adminId": "6af88d638f2ce9abec723082",
+    "adminRole": "super_admin",
+    "action": "cms_update_article",
+    "targetType": "cms",
+    "targetId": "6af88d648f2ce9abec7230ff",
+    "reason": "Updated editorial article",
+    "details": {
+      "title": "Updated HyperScale Story 1794674019128"
+    },
+    "ipAddress": "::1",
+    "createdAt": "2026-11-14T16:33:40.742Z",
+    "updatedAt": "2026-11-14T16:33:40.742Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af88d648f2ce9abec72310f",
+    "adminId": "6af88d638f2ce9abec723082",
+    "adminRole": "super_admin",
+    "action": "cms_delete_article",
+    "targetType": "cms",
+    "targetId": "6af88d648f2ce9abec7230ff",
+    "reason": "Deleted editorial article",
+    "details": {
+      "title": "Updated HyperScale Story 1794674019128"
+    },
+    "ipAddress": "::1",
+    "createdAt": "2026-11-14T16:33:40.747Z",
+    "updatedAt": "2026-11-14T16:33:40.747Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af88d648f2ce9abec72311f",
+    "adminId": "6af88d638f2ce9abec723082",
+    "adminRole": "super_admin",
+    "action": "resolve_job_report",
+    "targetType": "report",
+    "targetId": "6af88d648f2ce9abec723113",
+    "reason": "Warning issued to poster",
+    "details": {
+      "resolution": "reviewed",
+      "actionTaken": "none"
+    },
+    "ipAddress": "::1",
+    "createdAt": "2026-11-14T16:33:40.769Z",
+    "updatedAt": "2026-11-14T16:33:40.769Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af88d648f2ce9abec723156",
+    "adminId": "6af88d638f2ce9abec723082",
+    "adminRole": "super_admin",
+    "action": "platform_config_update",
+    "targetType": "config",
+    "targetId": "platform_industries",
+    "reason": "Config modified",
+    "details": {
+      "key": "platform_industries",
+      "category": "discovery",
+      "valuesCount": 5
+    },
+    "ipAddress": "::1",
+    "createdAt": "2026-11-14T16:33:40.830Z",
+    "updatedAt": "2026-11-14T16:33:40.830Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af88d9a8f2ce9abec723664",
+    "adminId": "6af88d998f2ce9abec723642",
+    "adminRole": "super_admin",
+    "action": "user_status_update",
+    "targetType": "user",
+    "targetId": "6af88d998f2ce9abec723647",
+    "reason": "Automated policy violation test",
+    "details": {
+      "previousStatus": "active",
+      "newStatus": "suspended"
+    },
+    "ipAddress": "::1",
+    "createdAt": "2026-11-14T16:34:34.804Z",
+    "updatedAt": "2026-11-14T16:34:34.804Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af88d9a8f2ce9abec723670",
+    "adminId": "6af88d998f2ce9abec723642",
+    "adminRole": "super_admin",
+    "action": "user_status_update",
+    "targetType": "user",
+    "targetId": "6af88d998f2ce9abec723647",
+    "reason": "Reinstated after review",
+    "details": {
+      "previousStatus": "suspended",
+      "newStatus": "active"
+    },
+    "ipAddress": "::1",
+    "createdAt": "2026-11-14T16:34:34.816Z",
+    "updatedAt": "2026-11-14T16:34:34.816Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af88d9a8f2ce9abec723679",
+    "adminId": "6af88d998f2ce9abec723642",
+    "adminRole": "super_admin",
+    "action": "user_role_update",
+    "targetType": "user",
+    "targetId": "6af88d998f2ce9abec723647",
+    "reason": "",
+    "details": {
+      "previous": {
+        "role": "user",
+        "adminRole": null
+      },
+      "updated": {
+        "role": "user",
+        "adminRole": "moderator"
+      }
+    },
+    "ipAddress": "::1",
+    "createdAt": "2026-11-14T16:34:34.824Z",
+    "updatedAt": "2026-11-14T16:34:34.824Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af88d9a8f2ce9abec723694",
+    "adminId": "6af88d998f2ce9abec723642",
+    "adminRole": "super_admin",
+    "action": "organization_verification",
+    "targetType": "organization",
+    "targetId": "6af88d9a8f2ce9abec72367d",
+    "reason": "Verified Delaware C-Corp documentation",
+    "details": {
+      "status": "approved",
+      "isVerified": true
+    },
+    "ipAddress": "::1",
+    "createdAt": "2026-11-14T16:34:34.844Z",
+    "updatedAt": "2026-11-14T16:34:34.844Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af88d9a8f2ce9abec7236a2",
+    "adminId": "6af88d998f2ce9abec723642",
+    "adminRole": "super_admin",
+    "action": "event_moderation",
+    "targetType": "event",
+    "targetId": "6af88d9a8f2ce9abec72369d",
+    "reason": "",
+    "details": {
+      "previous": {
+        "status": "Submitted",
+        "isFeatured": false
+      },
+      "updated": {
+        "status": "Published",
+        "isFeatured": true
+      }
+    },
+    "ipAddress": "::1",
+    "createdAt": "2026-11-14T16:34:34.860Z",
+    "updatedAt": "2026-11-14T16:34:34.860Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af88d9a8f2ce9abec7236bb",
+    "adminId": "6af88d998f2ce9abec723642",
+    "adminRole": "super_admin",
+    "action": "job_moderation",
+    "targetType": "job",
+    "targetId": "6af88d9a8f2ce9abec7236ab",
+    "reason": "",
+    "details": {
+      "previous": {
+        "status": "Published",
+        "isFeatured": false
+      },
+      "updated": {
+        "status": "Published",
+        "isFeatured": true
+      }
+    },
+    "ipAddress": "::1",
+    "createdAt": "2026-11-14T16:34:34.876Z",
+    "updatedAt": "2026-11-14T16:34:34.876Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af88d9a8f2ce9abec7236c1",
+    "adminId": "6af88d998f2ce9abec723642",
+    "adminRole": "super_admin",
+    "action": "cms_create_article",
+    "targetType": "cms",
+    "targetId": "6af88d9a8f2ce9abec7236bf",
+    "reason": "Published editorial article",
+    "details": {
+      "title": "From Zero to Scale: The HyperScale Story 1794674073372",
+      "type": "story"
+    },
+    "ipAddress": "::1",
+    "createdAt": "2026-11-14T16:34:34.881Z",
+    "updatedAt": "2026-11-14T16:34:34.881Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af88d9a8f2ce9abec7236cb",
+    "adminId": "6af88d998f2ce9abec723642",
+    "adminRole": "super_admin",
+    "action": "cms_update_article",
+    "targetType": "cms",
+    "targetId": "6af88d9a8f2ce9abec7236bf",
+    "reason": "Updated editorial article",
+    "details": {
+      "title": "Updated HyperScale Story 1794674073372"
+    },
+    "ipAddress": "::1",
+    "createdAt": "2026-11-14T16:34:34.892Z",
+    "updatedAt": "2026-11-14T16:34:34.892Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af88d9a8f2ce9abec7236cf",
+    "adminId": "6af88d998f2ce9abec723642",
+    "adminRole": "super_admin",
+    "action": "cms_delete_article",
+    "targetType": "cms",
+    "targetId": "6af88d9a8f2ce9abec7236bf",
+    "reason": "Deleted editorial article",
+    "details": {
+      "title": "Updated HyperScale Story 1794674073372"
+    },
+    "ipAddress": "::1",
+    "createdAt": "2026-11-14T16:34:34.896Z",
+    "updatedAt": "2026-11-14T16:34:34.896Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af88d9a8f2ce9abec7236df",
+    "adminId": "6af88d998f2ce9abec723642",
+    "adminRole": "super_admin",
+    "action": "resolve_job_report",
+    "targetType": "report",
+    "targetId": "6af88d9a8f2ce9abec7236d3",
+    "reason": "Warning issued to poster",
+    "details": {
+      "resolution": "reviewed",
+      "actionTaken": "none"
+    },
+    "ipAddress": "::1",
+    "createdAt": "2026-11-14T16:34:34.911Z",
+    "updatedAt": "2026-11-14T16:34:34.911Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af88d9a8f2ce9abec723716",
+    "adminId": "6af88d998f2ce9abec723642",
+    "adminRole": "super_admin",
+    "action": "platform_config_update",
+    "targetType": "config",
+    "targetId": "platform_industries",
+    "reason": "Config modified",
+    "details": {
+      "key": "platform_industries",
+      "category": "discovery",
+      "valuesCount": 5
+    },
+    "ipAddress": "::1",
+    "createdAt": "2026-11-14T16:34:34.963Z",
+    "updatedAt": "2026-11-14T16:34:34.963Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af88e78988701a973b2f252",
+    "adminId": "6af88e76988701a973b2f230",
+    "adminRole": "super_admin",
+    "action": "user_status_update",
+    "targetType": "user",
+    "targetId": "6af88e77988701a973b2f235",
+    "reason": "Automated policy violation test",
+    "details": {
+      "previousStatus": "active",
+      "newStatus": "suspended"
+    },
+    "ipAddress": "::1",
+    "createdAt": "2026-11-14T16:38:16.238Z",
+    "updatedAt": "2026-11-14T16:38:16.238Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af88e78988701a973b2f25e",
+    "adminId": "6af88e76988701a973b2f230",
+    "adminRole": "super_admin",
+    "action": "user_status_update",
+    "targetType": "user",
+    "targetId": "6af88e77988701a973b2f235",
+    "reason": "Reinstated after review",
+    "details": {
+      "previousStatus": "suspended",
+      "newStatus": "active"
+    },
+    "ipAddress": "::1",
+    "createdAt": "2026-11-14T16:38:16.255Z",
+    "updatedAt": "2026-11-14T16:38:16.255Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af88e78988701a973b2f267",
+    "adminId": "6af88e76988701a973b2f230",
+    "adminRole": "super_admin",
+    "action": "user_role_update",
+    "targetType": "user",
+    "targetId": "6af88e77988701a973b2f235",
+    "reason": "",
+    "details": {
+      "previous": {
+        "role": "user",
+        "adminRole": null
+      },
+      "updated": {
+        "role": "user",
+        "adminRole": "moderator"
+      }
+    },
+    "ipAddress": "::1",
+    "createdAt": "2026-11-14T16:38:16.267Z",
+    "updatedAt": "2026-11-14T16:38:16.267Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af88e78988701a973b2f282",
+    "adminId": "6af88e76988701a973b2f230",
+    "adminRole": "super_admin",
+    "action": "organization_verification",
+    "targetType": "organization",
+    "targetId": "6af88e78988701a973b2f26b",
+    "reason": "Verified Delaware C-Corp documentation",
+    "details": {
+      "status": "approved",
+      "isVerified": true
+    },
+    "ipAddress": "::1",
+    "createdAt": "2026-11-14T16:38:16.305Z",
+    "updatedAt": "2026-11-14T16:38:16.305Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af88e78988701a973b2f290",
+    "adminId": "6af88e76988701a973b2f230",
+    "adminRole": "super_admin",
+    "action": "event_moderation",
+    "targetType": "event",
+    "targetId": "6af88e78988701a973b2f28b",
+    "reason": "",
+    "details": {
+      "previous": {
+        "status": "Submitted",
+        "isFeatured": false
+      },
+      "updated": {
+        "status": "Published",
+        "isFeatured": true
+      }
+    },
+    "ipAddress": "::1",
+    "createdAt": "2026-11-14T16:38:16.326Z",
+    "updatedAt": "2026-11-14T16:38:16.326Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af88e78988701a973b2f2a9",
+    "adminId": "6af88e76988701a973b2f230",
+    "adminRole": "super_admin",
+    "action": "job_moderation",
+    "targetType": "job",
+    "targetId": "6af88e78988701a973b2f299",
+    "reason": "",
+    "details": {
+      "previous": {
+        "status": "Published",
+        "isFeatured": false
+      },
+      "updated": {
+        "status": "Published",
+        "isFeatured": true
+      }
+    },
+    "ipAddress": "::1",
+    "createdAt": "2026-11-14T16:38:16.353Z",
+    "updatedAt": "2026-11-14T16:38:16.353Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af88e78988701a973b2f2af",
+    "adminId": "6af88e76988701a973b2f230",
+    "adminRole": "super_admin",
+    "action": "cms_create_article",
+    "targetType": "cms",
+    "targetId": "6af88e78988701a973b2f2ad",
+    "reason": "Published editorial article",
+    "details": {
+      "title": "From Zero to Scale: The HyperScale Story 1794674294738",
+      "type": "story"
+    },
+    "ipAddress": "::1",
+    "createdAt": "2026-11-14T16:38:16.360Z",
+    "updatedAt": "2026-11-14T16:38:16.360Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af88e78988701a973b2f2b9",
+    "adminId": "6af88e76988701a973b2f230",
+    "adminRole": "super_admin",
+    "action": "cms_update_article",
+    "targetType": "cms",
+    "targetId": "6af88e78988701a973b2f2ad",
+    "reason": "Updated editorial article",
+    "details": {
+      "title": "Updated HyperScale Story 1794674294738"
+    },
+    "ipAddress": "::1",
+    "createdAt": "2026-11-14T16:38:16.372Z",
+    "updatedAt": "2026-11-14T16:38:16.372Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af88e78988701a973b2f2bd",
+    "adminId": "6af88e76988701a973b2f230",
+    "adminRole": "super_admin",
+    "action": "cms_delete_article",
+    "targetType": "cms",
+    "targetId": "6af88e78988701a973b2f2ad",
+    "reason": "Deleted editorial article",
+    "details": {
+      "title": "Updated HyperScale Story 1794674294738"
+    },
+    "ipAddress": "::1",
+    "createdAt": "2026-11-14T16:38:16.378Z",
+    "updatedAt": "2026-11-14T16:38:16.378Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af88e78988701a973b2f2cd",
+    "adminId": "6af88e76988701a973b2f230",
+    "adminRole": "super_admin",
+    "action": "resolve_job_report",
+    "targetType": "report",
+    "targetId": "6af88e78988701a973b2f2c1",
+    "reason": "Warning issued to poster",
+    "details": {
+      "resolution": "reviewed",
+      "actionTaken": "none"
+    },
+    "ipAddress": "::1",
+    "createdAt": "2026-11-14T16:38:16.399Z",
+    "updatedAt": "2026-11-14T16:38:16.399Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af88e78988701a973b2f304",
+    "adminId": "6af88e76988701a973b2f230",
+    "adminRole": "super_admin",
+    "action": "platform_config_update",
+    "targetType": "config",
+    "targetId": "platform_industries",
+    "reason": "Config modified",
+    "details": {
+      "key": "platform_industries",
+      "category": "discovery",
+      "valuesCount": 5
+    },
+    "ipAddress": "::1",
+    "createdAt": "2026-11-14T16:38:16.462Z",
+    "updatedAt": "2026-11-14T16:38:16.462Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af88eab988701a973b2f333",
+    "adminId": "6af88eaa988701a973b2f311",
+    "adminRole": "super_admin",
+    "action": "user_status_update",
+    "targetType": "user",
+    "targetId": "6af88eaa988701a973b2f316",
+    "reason": "Automated policy violation test",
+    "details": {
+      "previousStatus": "active",
+      "newStatus": "suspended"
+    },
+    "ipAddress": "::1",
+    "createdAt": "2026-11-14T16:39:07.753Z",
+    "updatedAt": "2026-11-14T16:39:07.753Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af88eab988701a973b2f33f",
+    "adminId": "6af88eaa988701a973b2f311",
+    "adminRole": "super_admin",
+    "action": "user_status_update",
+    "targetType": "user",
+    "targetId": "6af88eaa988701a973b2f316",
+    "reason": "Reinstated after review",
+    "details": {
+      "previousStatus": "suspended",
+      "newStatus": "active"
+    },
+    "ipAddress": "::1",
+    "createdAt": "2026-11-14T16:39:07.768Z",
+    "updatedAt": "2026-11-14T16:39:07.768Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af88eab988701a973b2f348",
+    "adminId": "6af88eaa988701a973b2f311",
+    "adminRole": "super_admin",
+    "action": "user_role_update",
+    "targetType": "user",
+    "targetId": "6af88eaa988701a973b2f316",
+    "reason": "",
+    "details": {
+      "previous": {
+        "role": "user",
+        "adminRole": null
+      },
+      "updated": {
+        "role": "user",
+        "adminRole": "moderator"
+      }
+    },
+    "ipAddress": "::1",
+    "createdAt": "2026-11-14T16:39:07.777Z",
+    "updatedAt": "2026-11-14T16:39:07.777Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af88eab988701a973b2f363",
+    "adminId": "6af88eaa988701a973b2f311",
+    "adminRole": "super_admin",
+    "action": "organization_verification",
+    "targetType": "organization",
+    "targetId": "6af88eab988701a973b2f34c",
+    "reason": "Verified Delaware C-Corp documentation",
+    "details": {
+      "status": "approved",
+      "isVerified": true
+    },
+    "ipAddress": "::1",
+    "createdAt": "2026-11-14T16:39:07.801Z",
+    "updatedAt": "2026-11-14T16:39:07.801Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af88eab988701a973b2f371",
+    "adminId": "6af88eaa988701a973b2f311",
+    "adminRole": "super_admin",
+    "action": "event_moderation",
+    "targetType": "event",
+    "targetId": "6af88eab988701a973b2f36c",
+    "reason": "",
+    "details": {
+      "previous": {
+        "status": "Submitted",
+        "isFeatured": false
+      },
+      "updated": {
+        "status": "Published",
+        "isFeatured": true
+      }
+    },
+    "ipAddress": "::1",
+    "createdAt": "2026-11-14T16:39:07.817Z",
+    "updatedAt": "2026-11-14T16:39:07.817Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af88eab988701a973b2f38a",
+    "adminId": "6af88eaa988701a973b2f311",
+    "adminRole": "super_admin",
+    "action": "job_moderation",
+    "targetType": "job",
+    "targetId": "6af88eab988701a973b2f37a",
+    "reason": "",
+    "details": {
+      "previous": {
+        "status": "Published",
+        "isFeatured": false
+      },
+      "updated": {
+        "status": "Published",
+        "isFeatured": true
+      }
+    },
+    "ipAddress": "::1",
+    "createdAt": "2026-11-14T16:39:07.837Z",
+    "updatedAt": "2026-11-14T16:39:07.837Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af88eab988701a973b2f390",
+    "adminId": "6af88eaa988701a973b2f311",
+    "adminRole": "super_admin",
+    "action": "cms_create_article",
+    "targetType": "cms",
+    "targetId": "6af88eab988701a973b2f38e",
+    "reason": "Published editorial article",
+    "details": {
+      "title": "From Zero to Scale: The HyperScale Story 1794674346320",
+      "type": "story"
+    },
+    "ipAddress": "::1",
+    "createdAt": "2026-11-14T16:39:07.843Z",
+    "updatedAt": "2026-11-14T16:39:07.843Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af88eab988701a973b2f39a",
+    "adminId": "6af88eaa988701a973b2f311",
+    "adminRole": "super_admin",
+    "action": "cms_update_article",
+    "targetType": "cms",
+    "targetId": "6af88eab988701a973b2f38e",
+    "reason": "Updated editorial article",
+    "details": {
+      "title": "Updated HyperScale Story 1794674346320"
+    },
+    "ipAddress": "::1",
+    "createdAt": "2026-11-14T16:39:07.854Z",
+    "updatedAt": "2026-11-14T16:39:07.854Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af88eab988701a973b2f39e",
+    "adminId": "6af88eaa988701a973b2f311",
+    "adminRole": "super_admin",
+    "action": "cms_delete_article",
+    "targetType": "cms",
+    "targetId": "6af88eab988701a973b2f38e",
+    "reason": "Deleted editorial article",
+    "details": {
+      "title": "Updated HyperScale Story 1794674346320"
+    },
+    "ipAddress": "::1",
+    "createdAt": "2026-11-14T16:39:07.859Z",
+    "updatedAt": "2026-11-14T16:39:07.859Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af88eab988701a973b2f3ae",
+    "adminId": "6af88eaa988701a973b2f311",
+    "adminRole": "super_admin",
+    "action": "resolve_job_report",
+    "targetType": "report",
+    "targetId": "6af88eab988701a973b2f3a2",
+    "reason": "Warning issued to poster",
+    "details": {
+      "resolution": "reviewed",
+      "actionTaken": "none"
+    },
+    "ipAddress": "::1",
+    "createdAt": "2026-11-14T16:39:07.878Z",
+    "updatedAt": "2026-11-14T16:39:07.878Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af88eab988701a973b2f3e5",
+    "adminId": "6af88eaa988701a973b2f311",
+    "adminRole": "super_admin",
+    "action": "platform_config_update",
+    "targetType": "config",
+    "targetId": "platform_industries",
+    "reason": "Config modified",
+    "details": {
+      "key": "platform_industries",
+      "category": "discovery",
+      "valuesCount": 5
+    },
+    "ipAddress": "::1",
+    "createdAt": "2026-11-14T16:39:07.930Z",
+    "updatedAt": "2026-11-14T16:39:07.930Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af88ec0988701a973b2f8fc",
+    "adminId": "6af88ebe988701a973b2f8da",
+    "adminRole": "super_admin",
+    "action": "user_status_update",
+    "targetType": "user",
+    "targetId": "6af88ebf988701a973b2f8df",
+    "reason": "Automated policy violation test",
+    "details": {
+      "previousStatus": "active",
+      "newStatus": "suspended"
+    },
+    "ipAddress": "::1",
+    "createdAt": "2026-11-14T16:39:28.346Z",
+    "updatedAt": "2026-11-14T16:39:28.346Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af88ec0988701a973b2f908",
+    "adminId": "6af88ebe988701a973b2f8da",
+    "adminRole": "super_admin",
+    "action": "user_status_update",
+    "targetType": "user",
+    "targetId": "6af88ebf988701a973b2f8df",
+    "reason": "Reinstated after review",
+    "details": {
+      "previousStatus": "suspended",
+      "newStatus": "active"
+    },
+    "ipAddress": "::1",
+    "createdAt": "2026-11-14T16:39:28.358Z",
+    "updatedAt": "2026-11-14T16:39:28.358Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af88ec0988701a973b2f911",
+    "adminId": "6af88ebe988701a973b2f8da",
+    "adminRole": "super_admin",
+    "action": "user_role_update",
+    "targetType": "user",
+    "targetId": "6af88ebf988701a973b2f8df",
+    "reason": "",
+    "details": {
+      "previous": {
+        "role": "user",
+        "adminRole": null
+      },
+      "updated": {
+        "role": "user",
+        "adminRole": "moderator"
+      }
+    },
+    "ipAddress": "::1",
+    "createdAt": "2026-11-14T16:39:28.366Z",
+    "updatedAt": "2026-11-14T16:39:28.366Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af88ec0988701a973b2f92c",
+    "adminId": "6af88ebe988701a973b2f8da",
+    "adminRole": "super_admin",
+    "action": "organization_verification",
+    "targetType": "organization",
+    "targetId": "6af88ec0988701a973b2f915",
+    "reason": "Verified Delaware C-Corp documentation",
+    "details": {
+      "status": "approved",
+      "isVerified": true
+    },
+    "ipAddress": "::1",
+    "createdAt": "2026-11-14T16:39:28.389Z",
+    "updatedAt": "2026-11-14T16:39:28.389Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af88ec0988701a973b2f93a",
+    "adminId": "6af88ebe988701a973b2f8da",
+    "adminRole": "super_admin",
+    "action": "event_moderation",
+    "targetType": "event",
+    "targetId": "6af88ec0988701a973b2f935",
+    "reason": "",
+    "details": {
+      "previous": {
+        "status": "Submitted",
+        "isFeatured": false
+      },
+      "updated": {
+        "status": "Published",
+        "isFeatured": true
+      }
+    },
+    "ipAddress": "::1",
+    "createdAt": "2026-11-14T16:39:28.402Z",
+    "updatedAt": "2026-11-14T16:39:28.402Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af88ec0988701a973b2f953",
+    "adminId": "6af88ebe988701a973b2f8da",
+    "adminRole": "super_admin",
+    "action": "job_moderation",
+    "targetType": "job",
+    "targetId": "6af88ec0988701a973b2f943",
+    "reason": "",
+    "details": {
+      "previous": {
+        "status": "Published",
+        "isFeatured": false
+      },
+      "updated": {
+        "status": "Published",
+        "isFeatured": true
+      }
+    },
+    "ipAddress": "::1",
+    "createdAt": "2026-11-14T16:39:28.422Z",
+    "updatedAt": "2026-11-14T16:39:28.422Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af88ec0988701a973b2f959",
+    "adminId": "6af88ebe988701a973b2f8da",
+    "adminRole": "super_admin",
+    "action": "cms_create_article",
+    "targetType": "cms",
+    "targetId": "6af88ec0988701a973b2f957",
+    "reason": "Published editorial article",
+    "details": {
+      "title": "From Zero to Scale: The HyperScale Story 1794674366887",
+      "type": "story"
+    },
+    "ipAddress": "::1",
+    "createdAt": "2026-11-14T16:39:28.428Z",
+    "updatedAt": "2026-11-14T16:39:28.428Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af88ec0988701a973b2f963",
+    "adminId": "6af88ebe988701a973b2f8da",
+    "adminRole": "super_admin",
+    "action": "cms_update_article",
+    "targetType": "cms",
+    "targetId": "6af88ec0988701a973b2f957",
+    "reason": "Updated editorial article",
+    "details": {
+      "title": "Updated HyperScale Story 1794674366887"
+    },
+    "ipAddress": "::1",
+    "createdAt": "2026-11-14T16:39:28.438Z",
+    "updatedAt": "2026-11-14T16:39:28.438Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af88ec0988701a973b2f967",
+    "adminId": "6af88ebe988701a973b2f8da",
+    "adminRole": "super_admin",
+    "action": "cms_delete_article",
+    "targetType": "cms",
+    "targetId": "6af88ec0988701a973b2f957",
+    "reason": "Deleted editorial article",
+    "details": {
+      "title": "Updated HyperScale Story 1794674366887"
+    },
+    "ipAddress": "::1",
+    "createdAt": "2026-11-14T16:39:28.443Z",
+    "updatedAt": "2026-11-14T16:39:28.443Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af88ec0988701a973b2f977",
+    "adminId": "6af88ebe988701a973b2f8da",
+    "adminRole": "super_admin",
+    "action": "resolve_job_report",
+    "targetType": "report",
+    "targetId": "6af88ec0988701a973b2f96b",
+    "reason": "Warning issued to poster",
+    "details": {
+      "resolution": "reviewed",
+      "actionTaken": "none"
+    },
+    "ipAddress": "::1",
+    "createdAt": "2026-11-14T16:39:28.459Z",
+    "updatedAt": "2026-11-14T16:39:28.459Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af88ec0988701a973b2f9ae",
+    "adminId": "6af88ebe988701a973b2f8da",
+    "adminRole": "super_admin",
+    "action": "platform_config_update",
+    "targetType": "config",
+    "targetId": "platform_industries",
+    "reason": "Config modified",
+    "details": {
+      "key": "platform_industries",
+      "category": "discovery",
+      "valuesCount": 5
+    },
+    "ipAddress": "::1",
+    "createdAt": "2026-11-14T16:39:28.514Z",
+    "updatedAt": "2026-11-14T16:39:28.514Z",
+    "__v": 0
+  }
+]

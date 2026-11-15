@@ -1,0 +1,42 @@
+[
+  {
+    "_id": "6af839cf7911352868a27008",
+    "followerId": "6af839cf72930c3102cd4c7a",
+    "targetId": "6af839ce72930c3102cd4c75",
+    "targetType": "founder",
+    "__v": 0,
+    "createdAt": "2026-11-14T10:37:03.810Z"
+  },
+  {
+    "_id": "6af83a467911352868a27011",
+    "targetId": "6af83a45feb9751e7dac71b4",
+    "followerId": "6af83a46feb9751e7dac71b9",
+    "targetType": "founder",
+    "__v": 0,
+    "createdAt": "2026-11-14T10:39:02.580Z"
+  },
+  {
+    "_id": "6af83a637911352868a27016",
+    "targetId": "6af83a62feb9751e7dac7210",
+    "targetType": "founder",
+    "followerId": "6af83a63feb9751e7dac7215",
+    "__v": 0,
+    "createdAt": "2026-11-14T10:39:31.679Z"
+  },
+  {
+    "_id": "6af88d937911352868a27024",
+    "targetId": "6af88d928f2ce9abec7235e6",
+    "targetType": "founder",
+    "followerId": "6af88d938f2ce9abec7235eb",
+    "__v": 0,
+    "createdAt": "2026-11-14T16:34:27.925Z"
+  },
+  {
+    "_id": "6af88ebe7911352868a2702d",
+    "followerId": "6af88ebd988701a973b2f883",
+    "targetType": "founder",
+    "targetId": "6af88ebd988701a973b2f87e",
+    "__v": 0,
+    "createdAt": "2026-11-14T16:39:26.504Z"
+  }
+]

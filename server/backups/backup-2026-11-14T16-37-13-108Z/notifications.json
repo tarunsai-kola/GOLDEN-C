@@ -1,0 +1,854 @@
+[
+  {
+    "_id": "6af839cf98ce54225c1640b2",
+    "userId": "6af839cf72930c3102cd4c7a",
+    "type": "general",
+    "title": "Update 1",
+    "message": "Platform update test",
+    "relatedEntity": null,
+    "isRead": true,
+    "readAt": "2026-11-14T10:37:03.756Z",
+    "deliveryStatus": "both",
+    "link": "",
+    "createdAt": "2026-11-14T10:37:03.750Z",
+    "updatedAt": "2026-11-14T10:37:03.756Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af839cf98ce54225c1640b6",
+    "userId": "6af839cf72930c3102cd4c7a",
+    "type": "general",
+    "title": "Update 2",
+    "message": "Security update test",
+    "relatedEntity": null,
+    "isRead": true,
+    "readAt": "2026-11-14T10:37:03.756Z",
+    "deliveryStatus": "both",
+    "link": "",
+    "createdAt": "2026-11-14T10:37:03.753Z",
+    "updatedAt": "2026-11-14T10:37:03.756Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af83a33feb9751e7dac7017",
+    "userId": "6af83a31feb9751e7dac6fda",
+    "type": "event_approved",
+    "title": "Event Published",
+    "message": "Your event \"AI Seed Pitch Showcase 1794652720862\" status is now Published.",
+    "relatedEntity": {
+      "entityType": "event",
+      "entityId": "6af83a33feb9751e7dac7002"
+    },
+    "isRead": false,
+    "readAt": null,
+    "deliveryStatus": "both",
+    "link": "/events/ai-seed-pitch-showcase-1794652720862",
+    "createdAt": "2026-11-14T10:38:43.379Z",
+    "updatedAt": "2026-11-14T10:38:43.379Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af83a33feb9751e7dac7045",
+    "userId": "6af83a32feb9751e7dac6fe1",
+    "type": "event_registration",
+    "title": "Event RSVP Confirmed",
+    "message": "You are confirmed for \"AI Seed Pitch Showcase 1794652720862\".",
+    "relatedEntity": {
+      "entityType": "event",
+      "entityId": "6af83a33feb9751e7dac7002"
+    },
+    "isRead": false,
+    "readAt": null,
+    "deliveryStatus": "both",
+    "link": "/events/ai-seed-pitch-showcase-1794652720862",
+    "createdAt": "2026-11-14T10:38:43.438Z",
+    "updatedAt": "2026-11-14T10:38:43.438Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af83a40feb9751e7dac7127",
+    "userId": "6af83a3ffeb9751e7dac7106",
+    "type": "connection_request",
+    "title": "New Connection Request",
+    "message": "David Founder sent you a connection request.",
+    "relatedEntity": {
+      "entityType": "connection",
+      "entityId": "6af83a40feb9751e7dac711c"
+    },
+    "isRead": false,
+    "readAt": null,
+    "deliveryStatus": "both",
+    "link": "/network",
+    "createdAt": "2026-11-14T10:38:56.627Z",
+    "updatedAt": "2026-11-14T10:38:56.627Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af83a40feb9751e7dac714a",
+    "userId": "6af83a40feb9751e7dac710b",
+    "type": "connection_request",
+    "title": "New Connection Request",
+    "message": "David Founder sent you a connection request.",
+    "relatedEntity": {
+      "entityType": "connection",
+      "entityId": "6af83a40feb9751e7dac713e"
+    },
+    "isRead": false,
+    "readAt": null,
+    "deliveryStatus": "both",
+    "link": "/network",
+    "createdAt": "2026-11-14T10:38:56.665Z",
+    "updatedAt": "2026-11-14T10:38:56.665Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af83a40feb9751e7dac7159",
+    "userId": "6af83a3ffeb9751e7dac7106",
+    "type": "connection_request",
+    "title": "New Connection Request",
+    "message": "Frank Stranger sent you a connection request.",
+    "relatedEntity": {
+      "entityType": "connection",
+      "entityId": "6af83a40feb9751e7dac7150"
+    },
+    "isRead": false,
+    "readAt": null,
+    "deliveryStatus": "both",
+    "link": "/network",
+    "createdAt": "2026-11-14T10:38:56.678Z",
+    "updatedAt": "2026-11-14T10:38:56.678Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af83a40feb9751e7dac716a",
+    "userId": "6af83a3ffeb9751e7dac7101",
+    "type": "connection_accepted",
+    "title": "Connection Accepted",
+    "message": "Elena Investor accepted your connection request.",
+    "relatedEntity": {
+      "entityType": "connection",
+      "entityId": "6af83a40feb9751e7dac711c"
+    },
+    "isRead": false,
+    "readAt": null,
+    "deliveryStatus": "both",
+    "link": "/network",
+    "createdAt": "2026-11-14T10:38:56.691Z",
+    "updatedAt": "2026-11-14T10:38:56.691Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af83a4649b92683fd66cd86",
+    "userId": "6af83a46feb9751e7dac71b9",
+    "type": "general",
+    "title": "Update 1",
+    "message": "Platform update test",
+    "relatedEntity": null,
+    "isRead": true,
+    "readAt": "2026-11-14T10:39:02.542Z",
+    "deliveryStatus": "both",
+    "link": "",
+    "createdAt": "2026-11-14T10:39:02.536Z",
+    "updatedAt": "2026-11-14T10:39:02.543Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af83a4649b92683fd66cd8a",
+    "userId": "6af83a46feb9751e7dac71b9",
+    "type": "general",
+    "title": "Update 2",
+    "message": "Security update test",
+    "relatedEntity": null,
+    "isRead": true,
+    "readAt": "2026-11-14T10:39:02.542Z",
+    "deliveryStatus": "both",
+    "link": "",
+    "createdAt": "2026-11-14T10:39:02.540Z",
+    "updatedAt": "2026-11-14T10:39:02.543Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af83a6327187cd20176eb92",
+    "userId": "6af83a63feb9751e7dac7215",
+    "type": "general",
+    "title": "Update 1",
+    "message": "Platform update test",
+    "relatedEntity": null,
+    "isRead": true,
+    "readAt": "2026-11-14T10:39:31.638Z",
+    "deliveryStatus": "both",
+    "link": "",
+    "createdAt": "2026-11-14T10:39:31.631Z",
+    "updatedAt": "2026-11-14T10:39:31.638Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af83a6327187cd20176eb96",
+    "userId": "6af83a63feb9751e7dac7215",
+    "type": "general",
+    "title": "Update 2",
+    "message": "Security update test",
+    "relatedEntity": null,
+    "isRead": true,
+    "readAt": "2026-11-14T10:39:31.638Z",
+    "deliveryStatus": "both",
+    "link": "",
+    "createdAt": "2026-11-14T10:39:31.634Z",
+    "updatedAt": "2026-11-14T10:39:31.638Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af83a6afeb9751e7dac7292",
+    "userId": "6af83a69feb9751e7dac7271",
+    "type": "connection_request",
+    "title": "New Connection Request",
+    "message": "David Founder sent you a connection request.",
+    "relatedEntity": {
+      "entityType": "connection",
+      "entityId": "6af83a6afeb9751e7dac7287"
+    },
+    "isRead": false,
+    "readAt": null,
+    "deliveryStatus": "both",
+    "link": "/network",
+    "createdAt": "2026-11-14T10:39:38.892Z",
+    "updatedAt": "2026-11-14T10:39:38.892Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af83a6afeb9751e7dac72b4",
+    "userId": "6af83a6afeb9751e7dac7276",
+    "type": "connection_request",
+    "title": "New Connection Request",
+    "message": "David Founder sent you a connection request.",
+    "relatedEntity": {
+      "entityType": "connection",
+      "entityId": "6af83a6afeb9751e7dac72a9"
+    },
+    "isRead": false,
+    "readAt": null,
+    "deliveryStatus": "both",
+    "link": "/network",
+    "createdAt": "2026-11-14T10:39:38.927Z",
+    "updatedAt": "2026-11-14T10:39:38.927Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af83a6afeb9751e7dac72c4",
+    "userId": "6af83a69feb9751e7dac7271",
+    "type": "connection_request",
+    "title": "New Connection Request",
+    "message": "Frank Stranger sent you a connection request.",
+    "relatedEntity": {
+      "entityType": "connection",
+      "entityId": "6af83a6afeb9751e7dac72bb"
+    },
+    "isRead": false,
+    "readAt": null,
+    "deliveryStatus": "both",
+    "link": "/network",
+    "createdAt": "2026-11-14T10:39:38.941Z",
+    "updatedAt": "2026-11-14T10:39:38.941Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af83a6afeb9751e7dac72d5",
+    "userId": "6af83a69feb9751e7dac726c",
+    "type": "connection_accepted",
+    "title": "Connection Accepted",
+    "message": "Elena Investor accepted your connection request.",
+    "relatedEntity": {
+      "entityType": "connection",
+      "entityId": "6af83a6afeb9751e7dac7287"
+    },
+    "isRead": false,
+    "readAt": null,
+    "deliveryStatus": "both",
+    "link": "/network",
+    "createdAt": "2026-11-14T10:39:38.953Z",
+    "updatedAt": "2026-11-14T10:39:38.953Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af83a78feb9751e7dac73ef",
+    "userId": "6af83a76feb9751e7dac73b2",
+    "type": "event_approved",
+    "title": "Event Published",
+    "message": "Your event \"AI Seed Pitch Showcase 1794652789942\" status is now Published.",
+    "relatedEntity": {
+      "entityType": "event",
+      "entityId": "6af83a78feb9751e7dac73da"
+    },
+    "isRead": false,
+    "readAt": null,
+    "deliveryStatus": "both",
+    "link": "/events/ai-seed-pitch-showcase-1794652789942",
+    "createdAt": "2026-11-14T10:39:52.349Z",
+    "updatedAt": "2026-11-14T10:39:52.349Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af83a78feb9751e7dac741f",
+    "userId": "6af83a77feb9751e7dac73b9",
+    "type": "event_registration",
+    "title": "Event RSVP Confirmed",
+    "message": "You are confirmed for \"AI Seed Pitch Showcase 1794652789942\".",
+    "relatedEntity": {
+      "entityType": "event",
+      "entityId": "6af83a78feb9751e7dac73da"
+    },
+    "isRead": false,
+    "readAt": null,
+    "deliveryStatus": "both",
+    "link": "/events/ai-seed-pitch-showcase-1794652789942",
+    "createdAt": "2026-11-14T10:39:52.385Z",
+    "updatedAt": "2026-11-14T10:39:52.385Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af88d23b1935732ffa58e32",
+    "userId": "6af88d22b1935732ffa58e0f",
+    "type": "moderation_decision",
+    "title": "Account Status: suspended",
+    "message": "Your account status has been updated to suspended. Reason: Automated policy violation test",
+    "relatedEntity": null,
+    "isRead": false,
+    "readAt": null,
+    "deliveryStatus": "both",
+    "link": "/dashboard",
+    "createdAt": "2026-11-14T16:32:35.587Z",
+    "updatedAt": "2026-11-14T16:32:35.587Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af88d23b1935732ffa58e3c",
+    "userId": "6af88d22b1935732ffa58e0f",
+    "type": "moderation_decision",
+    "title": "Account Status: active",
+    "message": "Your account status has been updated to active. Reason: Reinstated after review",
+    "relatedEntity": null,
+    "isRead": false,
+    "readAt": null,
+    "deliveryStatus": "both",
+    "link": "/dashboard",
+    "createdAt": "2026-11-14T16:32:35.600Z",
+    "updatedAt": "2026-11-14T16:32:35.600Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af88d23b1935732ffa58e60",
+    "userId": "6af88d22b1935732ffa58e0f",
+    "type": "moderation_decision",
+    "title": "Organization Verification: Approved",
+    "message": "Verification review completed for HyperScale Systems 1794673954101. Status: verified. Notes: Verified Delaware C-Corp documentation",
+    "relatedEntity": {
+      "entityType": "organization",
+      "entityId": "6af88d23b1935732ffa58e45"
+    },
+    "isRead": false,
+    "readAt": null,
+    "deliveryStatus": "both",
+    "link": "/organizations/6af88d23b1935732ffa58e45",
+    "createdAt": "2026-11-14T16:32:35.648Z",
+    "updatedAt": "2026-11-14T16:32:35.648Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af88d23b1935732ffa58e6e",
+    "userId": "6af88d22b1935732ffa58e0f",
+    "type": "event_approved",
+    "title": "Event Moderation: Published",
+    "message": "Your event \"Enterprise Cloud Summit 1794673954101\" status is now Published.",
+    "relatedEntity": {
+      "entityType": "event",
+      "entityId": "6af88d23b1935732ffa58e65"
+    },
+    "isRead": false,
+    "readAt": null,
+    "deliveryStatus": "both",
+    "link": "/events/enterprise-cloud-summit-1794673954101",
+    "createdAt": "2026-11-14T16:32:35.669Z",
+    "updatedAt": "2026-11-14T16:32:35.669Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af88d23b1935732ffa58eb9",
+    "userId": "6af88d23b1935732ffa58e14",
+    "type": "connection_request",
+    "title": "New Connection Request",
+    "message": "Jordan Founder sent you a connection request.",
+    "relatedEntity": {
+      "entityType": "connection",
+      "entityId": "6af88d23b1935732ffa58ead"
+    },
+    "isRead": false,
+    "readAt": null,
+    "deliveryStatus": "both",
+    "link": "/network",
+    "createdAt": "2026-11-14T16:32:35.758Z",
+    "updatedAt": "2026-11-14T16:32:35.758Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af88d23b1935732ffa58ec2",
+    "userId": "6af88d22b1935732ffa58e0f",
+    "type": "connection_accepted",
+    "title": "Connection Accepted",
+    "message": "Taylor Peer accepted your connection request.",
+    "relatedEntity": {
+      "entityType": "connection",
+      "entityId": "6af88d23b1935732ffa58ead"
+    },
+    "isRead": false,
+    "readAt": null,
+    "deliveryStatus": "both",
+    "link": "/network",
+    "createdAt": "2026-11-14T16:32:35.767Z",
+    "updatedAt": "2026-11-14T16:32:35.767Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af88d3eb1935732ffa58f13",
+    "userId": "6af88d3db1935732ffa58ef0",
+    "type": "moderation_decision",
+    "title": "Account Status: suspended",
+    "message": "Your account status has been updated to suspended. Reason: Automated policy violation test",
+    "relatedEntity": null,
+    "isRead": false,
+    "readAt": null,
+    "deliveryStatus": "both",
+    "link": "/dashboard",
+    "createdAt": "2026-11-14T16:33:02.559Z",
+    "updatedAt": "2026-11-14T16:33:02.559Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af88d3eb1935732ffa58f1d",
+    "userId": "6af88d3db1935732ffa58ef0",
+    "type": "moderation_decision",
+    "title": "Account Status: active",
+    "message": "Your account status has been updated to active. Reason: Reinstated after review",
+    "relatedEntity": null,
+    "isRead": false,
+    "readAt": null,
+    "deliveryStatus": "both",
+    "link": "/dashboard",
+    "createdAt": "2026-11-14T16:33:02.577Z",
+    "updatedAt": "2026-11-14T16:33:02.577Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af88d3eb1935732ffa58f41",
+    "userId": "6af88d3db1935732ffa58ef0",
+    "type": "moderation_decision",
+    "title": "Organization Verification: Approved",
+    "message": "Verification review completed for HyperScale Systems 1794673981096. Status: verified. Notes: Verified Delaware C-Corp documentation",
+    "relatedEntity": {
+      "entityType": "organization",
+      "entityId": "6af88d3eb1935732ffa58f26"
+    },
+    "isRead": false,
+    "readAt": null,
+    "deliveryStatus": "both",
+    "link": "/organizations/6af88d3eb1935732ffa58f26",
+    "createdAt": "2026-11-14T16:33:02.614Z",
+    "updatedAt": "2026-11-14T16:33:02.614Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af88d3eb1935732ffa58f4f",
+    "userId": "6af88d3db1935732ffa58ef0",
+    "type": "event_approved",
+    "title": "Event Moderation: Published",
+    "message": "Your event \"Enterprise Cloud Summit 1794673981096\" status is now Published.",
+    "relatedEntity": {
+      "entityType": "event",
+      "entityId": "6af88d3eb1935732ffa58f46"
+    },
+    "isRead": false,
+    "readAt": null,
+    "deliveryStatus": "both",
+    "link": "/events/enterprise-cloud-summit-1794673981096",
+    "createdAt": "2026-11-14T16:33:02.631Z",
+    "updatedAt": "2026-11-14T16:33:02.631Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af88d3eb1935732ffa58f9a",
+    "userId": "6af88d3eb1935732ffa58ef5",
+    "type": "connection_request",
+    "title": "New Connection Request",
+    "message": "Jordan Founder sent you a connection request.",
+    "relatedEntity": {
+      "entityType": "connection",
+      "entityId": "6af88d3eb1935732ffa58f8e"
+    },
+    "isRead": false,
+    "readAt": null,
+    "deliveryStatus": "both",
+    "link": "/network",
+    "createdAt": "2026-11-14T16:33:02.706Z",
+    "updatedAt": "2026-11-14T16:33:02.706Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af88d3eb1935732ffa58fa3",
+    "userId": "6af88d3db1935732ffa58ef0",
+    "type": "connection_accepted",
+    "title": "Connection Accepted",
+    "message": "Taylor Peer accepted your connection request.",
+    "relatedEntity": {
+      "entityType": "connection",
+      "entityId": "6af88d3eb1935732ffa58f8e"
+    },
+    "isRead": false,
+    "readAt": null,
+    "deliveryStatus": "both",
+    "link": "/network",
+    "createdAt": "2026-11-14T16:33:02.715Z",
+    "updatedAt": "2026-11-14T16:33:02.715Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af88d648f2ce9abec7230aa",
+    "userId": "6af88d638f2ce9abec723087",
+    "type": "moderation_decision",
+    "title": "Account Status: suspended",
+    "message": "Your account status has been updated to suspended. Reason: Automated policy violation test",
+    "relatedEntity": null,
+    "isRead": false,
+    "readAt": null,
+    "deliveryStatus": "both",
+    "link": "/dashboard",
+    "createdAt": "2026-11-14T16:33:40.623Z",
+    "updatedAt": "2026-11-14T16:33:40.623Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af88d648f2ce9abec7230b4",
+    "userId": "6af88d638f2ce9abec723087",
+    "type": "moderation_decision",
+    "title": "Account Status: active",
+    "message": "Your account status has been updated to active. Reason: Reinstated after review",
+    "relatedEntity": null,
+    "isRead": false,
+    "readAt": null,
+    "deliveryStatus": "both",
+    "link": "/dashboard",
+    "createdAt": "2026-11-14T16:33:40.636Z",
+    "updatedAt": "2026-11-14T16:33:40.636Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af88d648f2ce9abec7230d8",
+    "userId": "6af88d638f2ce9abec723087",
+    "type": "moderation_decision",
+    "title": "Organization Verification: Approved",
+    "message": "Verification review completed for HyperScale Systems 1794674019128. Status: verified. Notes: Verified Delaware C-Corp documentation",
+    "relatedEntity": {
+      "entityType": "organization",
+      "entityId": "6af88d648f2ce9abec7230bd"
+    },
+    "isRead": false,
+    "readAt": null,
+    "deliveryStatus": "both",
+    "link": "/organizations/6af88d648f2ce9abec7230bd",
+    "createdAt": "2026-11-14T16:33:40.682Z",
+    "updatedAt": "2026-11-14T16:33:40.682Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af88d648f2ce9abec7230e6",
+    "userId": "6af88d638f2ce9abec723087",
+    "type": "event_approved",
+    "title": "Event Moderation: Published",
+    "message": "Your event \"Enterprise Cloud Summit 1794674019128\" status is now Published.",
+    "relatedEntity": {
+      "entityType": "event",
+      "entityId": "6af88d648f2ce9abec7230dd"
+    },
+    "isRead": false,
+    "readAt": null,
+    "deliveryStatus": "both",
+    "link": "/events/enterprise-cloud-summit-1794674019128",
+    "createdAt": "2026-11-14T16:33:40.700Z",
+    "updatedAt": "2026-11-14T16:33:40.700Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af88d648f2ce9abec723131",
+    "userId": "6af88d648f2ce9abec72308c",
+    "type": "connection_request",
+    "title": "New Connection Request",
+    "message": "Jordan Founder sent you a connection request.",
+    "relatedEntity": {
+      "entityType": "connection",
+      "entityId": "6af88d648f2ce9abec723125"
+    },
+    "isRead": false,
+    "readAt": null,
+    "deliveryStatus": "both",
+    "link": "/network",
+    "createdAt": "2026-11-14T16:33:40.786Z",
+    "updatedAt": "2026-11-14T16:33:40.786Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af88d648f2ce9abec72313a",
+    "userId": "6af88d638f2ce9abec723087",
+    "type": "connection_accepted",
+    "title": "Connection Accepted",
+    "message": "Taylor Peer accepted your connection request.",
+    "relatedEntity": {
+      "entityType": "connection",
+      "entityId": "6af88d648f2ce9abec723125"
+    },
+    "isRead": false,
+    "readAt": null,
+    "deliveryStatus": "both",
+    "link": "/network",
+    "createdAt": "2026-11-14T16:33:40.795Z",
+    "updatedAt": "2026-11-14T16:33:40.795Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af88d818f2ce9abec723445",
+    "userId": "6af88d7f8f2ce9abec723408",
+    "type": "event_approved",
+    "title": "Event Published",
+    "message": "Your event \"AI Seed Pitch Showcase 1794674046917\" status is now Published.",
+    "relatedEntity": {
+      "entityType": "event",
+      "entityId": "6af88d818f2ce9abec723430"
+    },
+    "isRead": false,
+    "readAt": null,
+    "deliveryStatus": "both",
+    "link": "/events/ai-seed-pitch-showcase-1794674046917",
+    "createdAt": "2026-11-14T16:34:09.356Z",
+    "updatedAt": "2026-11-14T16:34:09.356Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af88d818f2ce9abec723477",
+    "userId": "6af88d808f2ce9abec72340f",
+    "type": "event_registration",
+    "title": "Event RSVP Confirmed",
+    "message": "You are confirmed for \"AI Seed Pitch Showcase 1794674046917\".",
+    "relatedEntity": {
+      "entityType": "event",
+      "entityId": "6af88d818f2ce9abec723430"
+    },
+    "isRead": false,
+    "readAt": null,
+    "deliveryStatus": "both",
+    "link": "/events/ai-seed-pitch-showcase-1794674046917",
+    "createdAt": "2026-11-14T16:34:09.407Z",
+    "updatedAt": "2026-11-14T16:34:09.407Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af88d8d8f2ce9abec723559",
+    "userId": "6af88d8c8f2ce9abec723538",
+    "type": "connection_request",
+    "title": "New Connection Request",
+    "message": "David Founder sent you a connection request.",
+    "relatedEntity": {
+      "entityType": "connection",
+      "entityId": "6af88d8d8f2ce9abec72354e"
+    },
+    "isRead": false,
+    "readAt": null,
+    "deliveryStatus": "both",
+    "link": "/network",
+    "createdAt": "2026-11-14T16:34:21.310Z",
+    "updatedAt": "2026-11-14T16:34:21.310Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af88d8d8f2ce9abec72357c",
+    "userId": "6af88d8c8f2ce9abec72353d",
+    "type": "connection_request",
+    "title": "New Connection Request",
+    "message": "David Founder sent you a connection request.",
+    "relatedEntity": {
+      "entityType": "connection",
+      "entityId": "6af88d8d8f2ce9abec723570"
+    },
+    "isRead": false,
+    "readAt": null,
+    "deliveryStatus": "both",
+    "link": "/network",
+    "createdAt": "2026-11-14T16:34:21.350Z",
+    "updatedAt": "2026-11-14T16:34:21.350Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af88d8d8f2ce9abec72358b",
+    "userId": "6af88d8c8f2ce9abec723538",
+    "type": "connection_request",
+    "title": "New Connection Request",
+    "message": "Frank Stranger sent you a connection request.",
+    "relatedEntity": {
+      "entityType": "connection",
+      "entityId": "6af88d8d8f2ce9abec723582"
+    },
+    "isRead": false,
+    "readAt": null,
+    "deliveryStatus": "both",
+    "link": "/network",
+    "createdAt": "2026-11-14T16:34:21.364Z",
+    "updatedAt": "2026-11-14T16:34:21.364Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af88d8d8f2ce9abec72359c",
+    "userId": "6af88d8b8f2ce9abec723533",
+    "type": "connection_accepted",
+    "title": "Connection Accepted",
+    "message": "Elena Investor accepted your connection request.",
+    "relatedEntity": {
+      "entityType": "connection",
+      "entityId": "6af88d8d8f2ce9abec72354e"
+    },
+    "isRead": false,
+    "readAt": null,
+    "deliveryStatus": "both",
+    "link": "/network",
+    "createdAt": "2026-11-14T16:34:21.378Z",
+    "updatedAt": "2026-11-14T16:34:21.378Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af88d939f73c4770e45839c",
+    "userId": "6af88d938f2ce9abec7235eb",
+    "type": "general",
+    "title": "Update 1",
+    "message": "Platform update test",
+    "relatedEntity": null,
+    "isRead": true,
+    "readAt": "2026-11-14T16:34:27.877Z",
+    "deliveryStatus": "both",
+    "link": "",
+    "createdAt": "2026-11-14T16:34:27.870Z",
+    "updatedAt": "2026-11-14T16:34:27.877Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af88d939f73c4770e4583a0",
+    "userId": "6af88d938f2ce9abec7235eb",
+    "type": "general",
+    "title": "Update 2",
+    "message": "Security update test",
+    "relatedEntity": null,
+    "isRead": true,
+    "readAt": "2026-11-14T16:34:27.877Z",
+    "deliveryStatus": "both",
+    "link": "",
+    "createdAt": "2026-11-14T16:34:27.874Z",
+    "updatedAt": "2026-11-14T16:34:27.877Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af88d9a8f2ce9abec72366a",
+    "userId": "6af88d998f2ce9abec723647",
+    "type": "moderation_decision",
+    "title": "Account Status: suspended",
+    "message": "Your account status has been updated to suspended. Reason: Automated policy violation test",
+    "relatedEntity": null,
+    "isRead": false,
+    "readAt": null,
+    "deliveryStatus": "both",
+    "link": "/dashboard",
+    "createdAt": "2026-11-14T16:34:34.807Z",
+    "updatedAt": "2026-11-14T16:34:34.807Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af88d9a8f2ce9abec723674",
+    "userId": "6af88d998f2ce9abec723647",
+    "type": "moderation_decision",
+    "title": "Account Status: active",
+    "message": "Your account status has been updated to active. Reason: Reinstated after review",
+    "relatedEntity": null,
+    "isRead": false,
+    "readAt": null,
+    "deliveryStatus": "both",
+    "link": "/dashboard",
+    "createdAt": "2026-11-14T16:34:34.818Z",
+    "updatedAt": "2026-11-14T16:34:34.818Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af88d9a8f2ce9abec723698",
+    "userId": "6af88d998f2ce9abec723647",
+    "type": "moderation_decision",
+    "title": "Organization Verification: Approved",
+    "message": "Verification review completed for HyperScale Systems 1794674073372. Status: verified. Notes: Verified Delaware C-Corp documentation",
+    "relatedEntity": {
+      "entityType": "organization",
+      "entityId": "6af88d9a8f2ce9abec72367d"
+    },
+    "isRead": false,
+    "readAt": null,
+    "deliveryStatus": "both",
+    "link": "/organizations/6af88d9a8f2ce9abec72367d",
+    "createdAt": "2026-11-14T16:34:34.847Z",
+    "updatedAt": "2026-11-14T16:34:34.847Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af88d9a8f2ce9abec7236a6",
+    "userId": "6af88d998f2ce9abec723647",
+    "type": "event_approved",
+    "title": "Event Moderation: Published",
+    "message": "Your event \"Enterprise Cloud Summit 1794674073372\" status is now Published.",
+    "relatedEntity": {
+      "entityType": "event",
+      "entityId": "6af88d9a8f2ce9abec72369d"
+    },
+    "isRead": false,
+    "readAt": null,
+    "deliveryStatus": "both",
+    "link": "/events/enterprise-cloud-summit-1794674073372",
+    "createdAt": "2026-11-14T16:34:34.862Z",
+    "updatedAt": "2026-11-14T16:34:34.862Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af88d9a8f2ce9abec7236f1",
+    "userId": "6af88d9a8f2ce9abec72364c",
+    "type": "connection_request",
+    "title": "New Connection Request",
+    "message": "Jordan Founder sent you a connection request.",
+    "relatedEntity": {
+      "entityType": "connection",
+      "entityId": "6af88d9a8f2ce9abec7236e5"
+    },
+    "isRead": false,
+    "readAt": null,
+    "deliveryStatus": "both",
+    "link": "/network",
+    "createdAt": "2026-11-14T16:34:34.926Z",
+    "updatedAt": "2026-11-14T16:34:34.926Z",
+    "__v": 0
+  },
+  {
+    "_id": "6af88d9a8f2ce9abec7236fa",
+    "userId": "6af88d998f2ce9abec723647",
+    "type": "connection_accepted",
+    "title": "Connection Accepted",
+    "message": "Taylor Peer accepted your connection request.",
+    "relatedEntity": {
+      "entityType": "connection",
+      "entityId": "6af88d9a8f2ce9abec7236e5"
+    },
+    "isRead": false,
+    "readAt": null,
+    "deliveryStatus": "both",
+    "link": "/network",
+    "createdAt": "2026-11-14T16:34:34.932Z",
+    "updatedAt": "2026-11-14T16:34:34.932Z",
+    "__v": 0
+  }
+]

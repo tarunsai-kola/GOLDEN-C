@@ -1,0 +1,27 @@
+{
+  "timestamp": "2026-11-14T16:37:13.109Z",
+  "database": "golden-circle",
+  "collections": {
+    "users": 223,
+    "organizations": 95,
+    "companyprofiles": 95,
+    "organizationmemberships": 95,
+    "organizationinvitations": 30,
+    "verificationrecords": 95,
+    "events": 23,
+    "eventregistrations": 18,
+    "jobs": 20,
+    "savedjobs": 0,
+    "jobreports": 12,
+    "connections": 16,
+    "conversations": 10,
+    "messages": 10,
+    "notifications": 50,
+    "notificationpreferences": 27,
+    "follows": 4,
+    "saveditems": 0,
+    "adminauditlogs": 44,
+    "editorialarticles": 0,
+    "platformconfigs": 1
+  }
+}
