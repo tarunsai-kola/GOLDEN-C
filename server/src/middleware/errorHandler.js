@@ -79,7 +79,7 @@ function errorHandler(err, req, res, next) {
   return res.status(500).json({
     success: false,
     statusCode: 500,
-    message: config.isDev ? err.message : 'Internal server error',
+    message: err.message || 'Internal server error',
     ...(config.isDev && { stack: err.stack }),
   });
 }

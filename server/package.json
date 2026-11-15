@@ -2,7 +2,7 @@
   "name": "golden-circle-server",
   "version": "1.0.0",
   "description": "The Golden Circle - Backend API",
-  "main": "src/server.js",
+  "main": "index.js",
   "scripts": {
     "dev": "nodemon src/server.js",
     "start": "node src/server.js"

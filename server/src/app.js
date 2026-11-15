@@ -13,6 +13,19 @@ const { config } = require('./config/env');
 
 const app = express();
 
+// Trust Vercel / reverse proxy headers (critical for rate limiting and real client IP resolution)
+app.set('trust proxy', 1);
+
+// Normalize rewritten URLs on Vercel serverless function invocations
+app.use((req, res, next) => {
+  if (req.originalUrl && req.url !== req.originalUrl) {
+    if (req.url.startsWith('/api/index') || req.url === '/index.js' || req.url === '/api/index.js') {
+      req.url = req.originalUrl;
+    }
+  }
+  next();
+});
+
 // Ensure DB is connected for serverless function invocations
 const { connectDB } = require('./config/db');
 app.use(async (req, res, next) => {
@@ -32,7 +45,7 @@ app.use(
 );
 
 // Flexible CORS supporting comma-separated CLIENT_URLs (e.g. localhost, Vercel preview & production)
-const allowedOrigins = (config.CLIENT_URL || 'http://localhost:5173')
+const allowedOrigins = (config.CLIENT_URL || '*')
   .split(',')
   .map((origin) => origin.trim().replace(/\/+$/, ''));
 
@@ -42,14 +55,14 @@ app.use(
       // Allow requests with no origin (like mobile apps, curl, server-to-server)
       if (!origin) return callback(null, true);
       if (
-        allowedOrigins.includes(origin) ||
         allowedOrigins.includes('*') ||
+        allowedOrigins.includes(origin) ||
         origin.endsWith('.vercel.app') ||
         config.isDev
       ) {
         return callback(null, true);
       }
-      // Return null, true to avoid throwing 500 error on CORS mismatches
+      // Never throw an error on CORS mismatches
       return callback(null, true);
     },
     credentials: true,
@@ -78,7 +91,7 @@ app.use('/uploads', express.static(path.join(__dirname, '../uploads')));
 app.use(globalLimiter);
 
 // Root health landing
-app.get('/', (req, res) => {
+app.get(['/', '/api', '/api/index.js', '/api/index', '/index.js'], (req, res) => {
   res.json({
     name: 'The Golden Circle API',
     status: 'online',
@@ -87,13 +100,14 @@ app.get('/', (req, res) => {
   });
 });
 
-// API routes
+// API routes - mounted at both /api and root level for flexible reverse proxies
 app.use('/api', mainRouter);
+app.use('/', mainRouter);
 
 // 404 handler
 app.use(notFound);
 
-// Global error handler
+// Central error handler
 app.use(errorHandler);
 
 module.exports = app;
