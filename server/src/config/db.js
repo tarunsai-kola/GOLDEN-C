@@ -1,39 +1,47 @@
 const mongoose = require('mongoose');
 const logger = require('../utils/logger');
 
-const MAX_RETRIES = 3;
-const RETRY_DELAY = 5000;
+let isConnecting = false;
 
-async function connectDB(retries = MAX_RETRIES) {
+async function connectDB() {
+  // If already connected, reuse existing connection
+  if (mongoose.connection.readyState === 1) {
+    return mongoose.connection;
+  }
+
+  // If connection is in progress, wait for it
+  if (isConnecting) {
+    let waitCount = 0;
+    while (mongoose.connection.readyState === 2 && waitCount < 50) {
+      await new Promise((resolve) => setTimeout(resolve, 100));
+      waitCount++;
+    }
+    if (mongoose.connection.readyState === 1) {
+      return mongoose.connection;
+    }
+  }
+
   try {
-    const conn = await mongoose.connect(process.env.MONGO_URI, {
+    isConnecting = true;
+    const uri = process.env.MONGO_URI;
+
+    if (!uri) {
+      logger.warn('No MONGO_URI provided. Skipping DB connection.');
+      return null;
+    }
+
+    const conn = await mongoose.connect(uri, {
       serverSelectionTimeoutMS: 5000,
     });
 
-    logger.success(`MongoDB connected: ${conn.connection.host}`);
-
-    mongoose.connection.on('error', (err) => {
-      logger.error(`MongoDB connection error: ${err.message}`);
-    });
-
-    mongoose.connection.on('disconnected', () => {
-      logger.warn('MongoDB disconnected. Attempting to reconnect...');
-    });
-
-    mongoose.connection.on('reconnected', () => {
-      logger.success('MongoDB reconnected.');
-    });
-
+    logger.success(`MongoDB connected: ${conn.connection.host}/${conn.connection.name}`);
+    return conn;
   } catch (error) {
     logger.error(`MongoDB connection failed: ${error.message}`);
-    if (retries > 0) {
-      logger.info(`Retrying connection in ${RETRY_DELAY / 1000}s... (${retries} retries left)`);
-      await new Promise((resolve) => setTimeout(resolve, RETRY_DELAY));
-      return connectDB(retries - 1);
-    } else {
-      logger.error('Max retries reached. Server will continue without DB connection.');
-      // Do not exit — let server run so health endpoint still responds
-    }
+    // Do not crash in serverless mode; let endpoint report error gracefully
+    return null;
+  } finally {
+    isConnecting = false;
   }
 }
 

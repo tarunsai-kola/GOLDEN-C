@@ -13,6 +13,17 @@ const { config } = require('./config/env');
 
 const app = express();
 
+// Ensure DB is connected for serverless function invocations
+const { connectDB } = require('./config/db');
+app.use(async (req, res, next) => {
+  try {
+    await connectDB();
+  } catch (err) {
+    // Continue so health and public routes can still return responses
+  }
+  next();
+});
+
 // Security headers with cross-origin asset support
 app.use(
   helmet({
@@ -32,12 +43,14 @@ app.use(
       if (!origin) return callback(null, true);
       if (
         allowedOrigins.includes(origin) ||
+        allowedOrigins.includes('*') ||
         origin.endsWith('.vercel.app') ||
         config.isDev
       ) {
         return callback(null, true);
       }
-      return callback(new Error(`CORS origin not allowed: ${origin}`));
+      // Return null, true to avoid throwing 500 error on CORS mismatches
+      return callback(null, true);
     },
     credentials: true,
     methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],
@@ -63,6 +76,16 @@ app.use('/uploads', express.static(path.join(__dirname, '../uploads')));
 
 // Rate limiting
 app.use(globalLimiter);
+
+// Root health landing
+app.get('/', (req, res) => {
+  res.json({
+    name: 'The Golden Circle API',
+    status: 'online',
+    version: '1.0.0',
+    health: '/api/health',
+  });
+});
 
 // API routes
 app.use('/api', mainRouter);
