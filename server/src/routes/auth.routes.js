@@ -31,8 +31,16 @@ router.post('/refresh', authController.refreshToken);
 router.post('/refresh-token', authController.refreshToken);
 router.post('/logout', authController.logout);
 
+// Account reactivation (public)
+router.post('/reactivate', authLimiter, authController.reactivateAccount);
+
 // Protected routes
 router.get('/me', authenticate, authController.getMe);
+router.put('/profile', authenticate, authController.updateProfile);
+router.patch('/profile', authenticate, authController.updateProfile);
+router.put('/me', authenticate, authController.updateProfile);
+router.patch('/me', authenticate, authController.updateProfile);
+router.post('/deactivate', authenticate, authController.deactivateAccount);
 
 // Admin / Test route for updating user status (activate / suspend)
 router.patch('/users/:id/status', authController.updateStatus);

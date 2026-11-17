@@ -50,8 +50,19 @@ const verifyEmail = async (req, res, next) => {
  */
 const login = async (req, res, next) => {
   try {
-    const { email, password } = req.body;
-    const result = await authService.login({ email, password });
+    const { email, password, reactivate } = req.body;
+    const result = await authService.login({ email, password, reactivate });
+
+    if (result.requiresReactivation) {
+      return res.status(200).json({
+        success: false,
+        statusCode: 200,
+        requiresReactivation: true,
+        isDeactivated: true,
+        message: result.message,
+        data: result,
+      });
+    }
 
     res.cookie(COOKIE_NAME, result.refreshToken, getCookieOptions());
 
@@ -145,6 +156,55 @@ const getMe = async (req, res, next) => {
 };
 
 /**
+ * Update authenticated user profile
+ */
+const updateProfile = async (req, res, next) => {
+  try {
+    const updatedUser = await authService.updateProfile(req.user._id, req.body);
+    return ApiResponse.success(res, 'Profile updated successfully', updatedUser);
+  } catch (error) {
+    next(error);
+  }
+};
+
+/**
+ * Deactivate authenticated user account
+ */
+const deactivateAccount = async (req, res, next) => {
+  try {
+    const result = await authService.deactivateAccount(req.user._id);
+
+    res.clearCookie(COOKIE_NAME, {
+      ...getCookieOptions(),
+      maxAge: 0,
+    });
+
+    return ApiResponse.success(res, result.message, result);
+  } catch (error) {
+    next(error);
+  }
+};
+
+/**
+ * Reactivate deactivated user account
+ */
+const reactivateAccount = async (req, res, next) => {
+  try {
+    const { email, password } = req.body;
+    const result = await authService.reactivateAccount({ email, password });
+
+    res.cookie(COOKIE_NAME, result.refreshToken, getCookieOptions());
+
+    return ApiResponse.success(res, result.message, {
+      user: result.user,
+      accessToken: result.accessToken,
+    });
+  } catch (error) {
+    next(error);
+  }
+};
+
+/**
  * Update user status (admin / test route)
  */
 const updateStatus = async (req, res, next) => {
@@ -167,5 +227,8 @@ module.exports = {
   forgotPassword,
   resetPassword,
   getMe,
+  updateProfile,
+  deactivateAccount,
+  reactivateAccount,
   updateStatus,
 };

@@ -89,6 +89,27 @@ export default function ConnectionCard({
                 <span className="truncate">{user.organization.name}</span>
               </div>
             )}
+
+            {/* Badges for What you cover / Time you have / Looking for */}
+            {(user?.lookingFor || user?.timeCommitment || (user?.workCovers && user.workCovers.length > 0)) && (
+              <div className="flex flex-wrap gap-1 mt-2">
+                {user.lookingFor && (
+                  <span className="text-[10px] font-semibold bg-amber-50 text-amber-800 border border-amber-200/60 px-2 py-0.5 rounded-full">
+                    {user.lookingFor}
+                  </span>
+                )}
+                {user.timeCommitment && (
+                  <span className="text-[10px] font-medium bg-neutral-100 text-neutral-700 px-2 py-0.5 rounded-full">
+                    {user.timeCommitment}
+                  </span>
+                )}
+                {user.workCovers?.slice(0, 2).map((w) => (
+                  <span key={w} className="text-[10px] bg-neutral-50 text-neutral-600 border border-neutral-200 px-1.5 py-0.5 rounded-md">
+                    {w}
+                  </span>
+                ))}
+              </div>
+            )}
           </div>
         </div>
 

@@ -87,6 +87,16 @@ export function AuthProvider({ children }) {
     try {
       const res = await api.post('/auth/login', credentials);
       const data = res.data?.data || res.data;
+
+      if (res.data?.requiresReactivation || data?.requiresReactivation) {
+        return {
+          requiresReactivation: true,
+          isDeactivated: true,
+          message: res.data?.message || 'Your account is currently deactivated.',
+          user: data?.user || data,
+        };
+      }
+
       const loggedUser = data.user || data;
       const token = data.accessToken || data.token;
 
@@ -181,6 +191,55 @@ export function AuthProvider({ children }) {
     }
   }, []);
 
+  const updateProfile = useCallback(async (profileData) => {
+    try {
+      const res = await api.put('/auth/profile', profileData);
+      const updatedUser = res.data?.data?.user || res.data?.data || res.data;
+      if (updatedUser) {
+        setUser(updatedUser);
+      }
+      return {
+        success: true,
+        message: res.data?.message || 'Profile updated successfully',
+        data: updatedUser,
+      };
+    } catch (err) {
+      throw err;
+    }
+  }, []);
+
+  const deactivateAccount = useCallback(async () => {
+    try {
+      const res = await api.post('/auth/deactivate');
+      clearAuthData();
+      return {
+        success: true,
+        message: res.data?.message || 'Account deactivated successfully',
+      };
+    } catch (err) {
+      clearAuthData();
+      throw err;
+    }
+  }, []);
+
+  const reactivateAccount = useCallback(async ({ email, password }) => {
+    try {
+      const res = await api.post('/auth/reactivate', { email, password });
+      const data = res.data?.data || res.data;
+      const loggedUser = data.user || data;
+      const token = data.accessToken || data.token;
+      applyAuthData(loggedUser, token);
+      return {
+        success: true,
+        message: res.data?.message || 'Account reactivated successfully',
+        user: loggedUser,
+        token,
+      };
+    } catch (err) {
+      throw err;
+    }
+  }, []);
+
   const refreshProfile = useCallback(async () => {
     try {
       const res = await api.get('/auth/me');
@@ -201,6 +260,9 @@ export function AuthProvider({ children }) {
     login,
     register,
     logout,
+    updateProfile,
+    deactivateAccount,
+    reactivateAccount,
     verifyAccount,
     verifyEmail: verifyAccount,
     forgotPassword,

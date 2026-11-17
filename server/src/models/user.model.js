@@ -31,6 +31,16 @@ const userSchema = new mongoose.Schema(
       trim: true,
       default: '',
     },
+    state: {
+      type: String,
+      trim: true,
+      default: 'Not saying',
+    },
+    district: {
+      type: String,
+      trim: true,
+      default: '',
+    },
     avatar: {
       type: String,
       trim: true,
@@ -40,13 +50,37 @@ const userSchema = new mongoose.Schema(
       type: String,
       trim: true,
       default: '',
-      maxlength: [120, 'Headline cannot exceed 120 characters'],
+      maxlength: [90, 'Headline cannot exceed 90 characters'],
+    },
+    intro: {
+      type: String,
+      trim: true,
+      default: '',
+      maxlength: [600, 'Intro cannot exceed 600 characters'],
     },
     bio: {
       type: String,
       trim: true,
       default: '',
       maxlength: [1000, 'Bio cannot exceed 1000 characters'],
+    },
+    workCovers: {
+      type: [String],
+      default: [],
+    },
+    fields: {
+      type: [String],
+      default: [],
+    },
+    timeCommitment: {
+      type: String,
+      enum: ['Full time', 'Part time', 'Exploring', ''],
+      default: '',
+    },
+    lookingFor: {
+      type: String,
+      enum: ['A co-founder for my idea', 'An idea to join', 'Either', ''],
+      default: '',
     },
     website: {
       type: String,
@@ -57,6 +91,20 @@ const userSchema = new mongoose.Schema(
       type: String,
       trim: true,
       default: '',
+    },
+    github: {
+      type: String,
+      trim: true,
+      default: '',
+    },
+    isDeactivated: {
+      type: Boolean,
+      default: false,
+      index: true,
+    },
+    deactivatedAt: {
+      type: Date,
+      default: null,
     },
     accountType: {
       type: String,
@@ -75,7 +123,7 @@ const userSchema = new mongoose.Schema(
     },
     status: {
       type: String,
-      enum: ['pending', 'active', 'suspended'],
+      enum: ['pending', 'active', 'suspended', 'deactivated'],
       default: 'pending',
     },
     isEmailVerified: {

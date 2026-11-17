@@ -5,7 +5,7 @@ import { useAuth } from '../../context/AuthContext';
 import Button from '../../components/ui/Button';
 
 export default function Login() {
-  const { login } = useAuth();
+  const { login, reactivateAccount } = useAuth();
   const navigate = useNavigate();
   const location = useLocation();
 
@@ -17,8 +17,10 @@ export default function Login() {
 
   const [showPassword, setShowPassword] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [reactivating, setReactivating] = useState(false);
   const [error, setError] = useState(null);
-  const [statusNotice, setStatusNotice] = useState(null);
+  const [statusNotice, setStatusNotice] = useState(location.state?.notice ? { type: 'info', message: location.state.notice } : null);
+  const [deactivatedInfo, setDeactivatedInfo] = useState(null);
 
   const from = location.state?.from?.pathname || '/dashboard';
 
@@ -30,12 +32,14 @@ export default function Login() {
     }));
     if (error) setError(null);
     if (statusNotice) setStatusNotice(null);
+    if (deactivatedInfo) setDeactivatedInfo(null);
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     setError(null);
     setStatusNotice(null);
+    setDeactivatedInfo(null);
     setLoading(true);
 
     try {
@@ -43,6 +47,15 @@ export default function Login() {
         email: formData.email.trim(),
         password: formData.password,
       });
+
+      if (res.requiresReactivation || res.isDeactivated) {
+        setDeactivatedInfo({
+          email: formData.email.trim(),
+          password: formData.password,
+          fullName: res.user?.fullName,
+        });
+        return;
+      }
 
       if (res.user?.status === 'suspended') {
         setStatusNotice({
@@ -61,7 +74,13 @@ export default function Login() {
 
       navigate(from, { replace: true });
     } catch (err) {
-      if (err.status === 403 && err.message?.toLowerCase().includes('suspended')) {
+      if (err.data?.requiresReactivation || err.data?.isDeactivated) {
+        setDeactivatedInfo({
+          email: formData.email.trim(),
+          password: formData.password,
+          fullName: err.data?.user?.fullName,
+        });
+      } else if (err.status === 403 && err.message?.toLowerCase().includes('suspended')) {
         setError('Your account has been suspended. Please contact support@thegoldencircle.io');
       } else if (err.status === 401 || err.status === 400) {
         setError(err.message || 'Invalid email or password');
@@ -70,6 +89,24 @@ export default function Login() {
       }
     } finally {
       setLoading(false);
+    }
+  };
+
+  const handleReactivate = async () => {
+    if (!deactivatedInfo) return;
+    setReactivating(true);
+    setError(null);
+
+    try {
+      await reactivateAccount({
+        email: deactivatedInfo.email,
+        password: deactivatedInfo.password,
+      });
+      navigate(from, { replace: true });
+    } catch (err) {
+      setError(err.message || 'Failed to reactivate account. Please verify your password.');
+    } finally {
+      setReactivating(false);
     }
   };
 
@@ -103,6 +140,45 @@ export default function Login() {
             <CheckCircle2 className="w-5 h-5 flex-shrink-0 mt-0.5" />
           )}
           <span>{statusNotice.message}</span>
+        </div>
+      )}
+
+      {deactivatedInfo && (
+        <div className="mb-6 p-5 rounded-2xl bg-amber-50 border border-amber-300 text-amber-900 shadow-xs animate-in fade-in duration-200">
+          <div className="flex items-start gap-3">
+            <div className="p-2 bg-amber-600 text-white rounded-xl flex-shrink-0 mt-0.5">
+              <ShieldAlert className="w-5 h-5" />
+            </div>
+            <div>
+              <h3 className="font-bold text-sm text-gray-900">
+                Account is currently deactivated
+              </h3>
+              <p className="text-xs text-neutral-600 mt-1 leading-relaxed">
+                Welcome back{deactivatedInfo.fullName ? `, ${deactivatedInfo.fullName}` : ''}! Your profile, venture ideas, and events were hidden when you deactivated your account. Nothing was deleted.
+              </p>
+            </div>
+          </div>
+          <div className="mt-4 pt-3 border-t border-amber-200/80 flex items-center gap-3">
+            <Button
+              type="button"
+              variant="primary"
+              size="sm"
+              loading={reactivating}
+              onClick={handleReactivate}
+              className="flex-1 justify-center font-bold"
+            >
+              Reactivate My Account
+            </Button>
+            <Button
+              type="button"
+              variant="ghost"
+              size="sm"
+              onClick={() => setDeactivatedInfo(null)}
+              className="text-neutral-600"
+            >
+              Cancel
+            </Button>
+          </div>
         </div>
       )}
 

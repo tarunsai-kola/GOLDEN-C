@@ -87,7 +87,7 @@ class AuthService {
   /**
    * Log in user
    */
-  async login({ email, password }) {
+  async login({ email, password, reactivate = false }) {
     const user = await User.findOne({ email: email.toLowerCase() }).select(
       '+password +refreshToken'
     );
@@ -103,6 +103,25 @@ class AuthService {
 
     if (user.status === 'suspended') {
       throw ApiError.forbidden('Your account has been suspended. Please contact support.');
+    }
+
+    if (user.status === 'deactivated' || user.isDeactivated) {
+      if (reactivate) {
+        user.status = 'active';
+        user.isDeactivated = false;
+        user.deactivatedAt = null;
+      } else {
+        return {
+          requiresReactivation: true,
+          isDeactivated: true,
+          message: 'Your account is currently deactivated.',
+          user: {
+            _id: user._id.toString(),
+            email: user.email,
+            fullName: user.fullName,
+          },
+        };
+      }
     }
 
     const tokenPayload = {
@@ -240,10 +259,136 @@ class AuthService {
   }
 
   /**
+   * Update user profile
+   */
+  async updateProfile(userId, profileData) {
+    const user = await User.findById(userId);
+    if (!user) {
+      throw ApiError.notFound('User not found');
+    }
+
+    if (profileData.fullName !== undefined) {
+      user.fullName = profileData.fullName.trim();
+    }
+    if (profileData.headline !== undefined) {
+      user.headline = profileData.headline.trim().slice(0, 90);
+    }
+    if (profileData.intro !== undefined) {
+      user.intro = profileData.intro.trim().slice(0, 600);
+      user.bio = user.intro; // Sync for backwards-compatibility
+    } else if (profileData.bio !== undefined) {
+      user.bio = profileData.bio.trim();
+      user.intro = user.bio.slice(0, 600);
+    }
+    if (profileData.workCovers !== undefined && Array.isArray(profileData.workCovers)) {
+      user.workCovers = profileData.workCovers;
+    }
+    if (profileData.fields !== undefined && Array.isArray(profileData.fields)) {
+      user.fields = profileData.fields;
+    }
+    if (profileData.timeCommitment !== undefined) {
+      user.timeCommitment = profileData.timeCommitment;
+    }
+    if (profileData.lookingFor !== undefined) {
+      user.lookingFor = profileData.lookingFor;
+    }
+    if (profileData.state !== undefined) {
+      user.state = profileData.state.trim();
+    }
+    if (profileData.district !== undefined) {
+      user.district = profileData.district.trim();
+    }
+    // Update consolidated location if state / district are set
+    if (user.state && user.state !== 'Not saying') {
+      user.location = user.district ? `${user.district}, ${user.state}` : user.state;
+    } else if (profileData.location !== undefined) {
+      user.location = profileData.location.trim();
+    }
+    if (profileData.website !== undefined) {
+      user.website = profileData.website.trim();
+    }
+    if (profileData.linkedin !== undefined) {
+      user.linkedin = profileData.linkedin.trim();
+    }
+    if (profileData.github !== undefined) {
+      user.github = profileData.github.trim();
+    }
+    if (profileData.avatar !== undefined) {
+      user.avatar = profileData.avatar;
+    }
+
+    await user.save();
+    return user.toJSON();
+  }
+
+  /**
+   * Deactivate user account
+   */
+  async deactivateAccount(userId) {
+    const user = await User.findById(userId);
+    if (!user) {
+      throw ApiError.notFound('User not found');
+    }
+
+    user.isDeactivated = true;
+    user.status = 'deactivated';
+    user.deactivatedAt = new Date();
+    user.refreshToken = undefined;
+    await user.save({ validateBeforeSave: false });
+
+    return {
+      success: true,
+      message: 'Account deactivated successfully. You have been signed out everywhere.',
+    };
+  }
+
+  /**
+   * Reactivate user account
+   */
+  async reactivateAccount({ email, password }) {
+    if (!email || !password) {
+      throw ApiError.badRequest('Email and password are required to reactivate account');
+    }
+
+    const user = await User.findOne({ email: email.toLowerCase() }).select('+password +refreshToken');
+    if (!user) {
+      throw ApiError.unauthorized('Invalid email or password');
+    }
+
+    const isMatch = await user.comparePassword(password);
+    if (!isMatch) {
+      throw ApiError.unauthorized('Invalid email or password');
+    }
+
+    user.isDeactivated = false;
+    user.status = 'active';
+    user.deactivatedAt = null;
+
+    const tokenPayload = {
+      id: user._id.toString(),
+      email: user.email,
+      role: user.role,
+    };
+
+    const accessToken = generateAccessToken(tokenPayload);
+    const refreshToken = generateRefreshToken({ id: user._id.toString() });
+
+    user.refreshToken = refreshToken;
+    await user.save({ validateBeforeSave: false });
+
+    return {
+      message: 'Account reactivated successfully. Welcome back!',
+      user: user.toJSON(),
+      accessToken,
+      refreshToken,
+    };
+  }
+
+  /**
    * Update user status (admin or test helper)
    */
   async updateUserStatus(userId, status) {
-    const validStatuses = ['pending', 'active', 'suspended'];
+    const validStatuses = ['pending', 'active', 'suspended', 'deactivated'];
     if (!validStatuses.includes(status)) {
       throw ApiError.badRequest(`Invalid status. Must be one of: ${validStatuses.join(', ')}`);
     }

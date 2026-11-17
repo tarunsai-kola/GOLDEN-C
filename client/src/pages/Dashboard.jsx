@@ -279,6 +279,17 @@ export default function Dashboard() {
 
             {/* Quick Action Buttons */}
             <div className="flex flex-wrap items-center gap-2.5">
+              <Link to="/profile">
+                <Button
+                  variant="secondary"
+                  size="sm"
+                  className="text-xs gap-1.5 shadow-2xs font-bold text-amber-900 border-amber-300 bg-amber-50/60 hover:bg-amber-100"
+                >
+                  <User className="w-3.5 h-3.5 text-amber-600" />
+                  Your Profile
+                </Button>
+              </Link>
+
               <Button
                 variant="secondary"
                 size="sm"

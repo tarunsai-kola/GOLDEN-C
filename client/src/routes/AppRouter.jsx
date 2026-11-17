@@ -14,6 +14,7 @@ import PageLoader from '../components/common/PageLoader';
 import Home from '../pages/Home';
 import NotFound from '../pages/NotFound';
 import Dashboard from '../pages/Dashboard';
+import Profile from '../pages/Profile';
 import Login from '../pages/auth/Login';
 import Register from '../pages/auth/Register';
 import ForgotPassword from '../pages/auth/ForgotPassword';
@@ -77,6 +78,14 @@ export default function AppRouter() {
                     element={
                       <ProtectedRoute>
                         <Dashboard />
+                      </ProtectedRoute>
+                    }
+                  />
+                  <Route
+                    path="profile"
+                    element={
+                      <ProtectedRoute>
+                        <Profile />
                       </ProtectedRoute>
                     }
                   />

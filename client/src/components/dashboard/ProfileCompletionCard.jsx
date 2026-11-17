@@ -36,9 +36,16 @@ export default function ProfileCompletionCard({ user }) {
               <p className="text-xs text-neutral-600">Your profile is fully verified across the syndicate network.</p>
             </div>
           </div>
-          <span className="text-xs font-bold text-amber-800 bg-white/80 px-3 py-1.5 rounded-xl border border-amber-200">
-            All Star Founder
-          </span>
+          <div className="flex items-center gap-2">
+            <span className="text-xs font-bold text-amber-800 bg-white/80 px-3 py-1.5 rounded-xl border border-amber-200">
+              All Star Founder
+            </span>
+            <Link to="/profile">
+              <Button variant="ghost" size="sm" className="text-xs font-semibold text-amber-900 hover:bg-amber-100/60">
+                Edit
+              </Button>
+            </Link>
+          </div>
         </div>
       </Card>
     );
@@ -95,6 +102,16 @@ export default function ProfileCompletionCard({ user }) {
             <span className="truncate">{step.label}</span>
           </div>
         ))}
+      </div>
+
+      <div className="mt-4 pt-3 border-t border-neutral-100 flex items-center justify-between">
+        <span className="text-xs text-neutral-500">Keep your details fresh to attract founders</span>
+        <Link to="/profile">
+          <Button variant="outline" size="sm" className="gap-1.5 text-xs font-bold text-amber-800 border-amber-300 hover:bg-amber-50">
+            Edit Profile
+            <ArrowRight size={14} />
+          </Button>
+        </Link>
       </div>
     </Card>
   );

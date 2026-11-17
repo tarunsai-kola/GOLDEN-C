@@ -15,6 +15,7 @@ import {
   MessageSquare,
   ShieldCheck,
   Check,
+  User,
 } from 'lucide-react';
 import { useAuth } from '../../context/AuthContext';
 import { useOrganization } from '../../context/OrganizationContext';
@@ -186,7 +187,7 @@ export default function Navbar() {
 
               <NotificationCenter />
 
-              <Link to="/dashboard">
+              <Link to="/profile" title="Your Founder Profile">
                 <Button variant="ghost" size="sm" className="gap-2">
                   <div
                     className="h-6 w-6 rounded-full border flex items-center justify-center text-[10px] font-bold"
@@ -199,7 +200,7 @@ export default function Navbar() {
                     {initials}
                   </div>
                   <span className="font-medium text-neutral-800">
-                    {user?.fullName?.split(' ')[0] || 'Dashboard'}
+                    {user?.fullName?.split(' ')[0] || 'Profile'}
                   </span>
                 </Button>
               </Link>
@@ -375,6 +376,15 @@ export default function Navbar() {
                   Executive Admin Console
                 </Link>
               )}
+
+              <Link
+                to="/profile"
+                onClick={() => setIsMobileOpen(false)}
+                className="flex items-center gap-2 px-3 py-2 rounded-xl hover:bg-neutral-50 text-sm font-semibold text-neutral-800"
+              >
+                <User size={16} className="text-amber-600" />
+                Your Founder Profile
+              </Link>
 
               <Link to="/dashboard" onClick={() => setIsMobileOpen(false)}>
                 <Button
