@@ -9,17 +9,16 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Brand */}
           <div>
-            <div className="flex items-center gap-2.5 mb-4">
-              <div
-                className="h-8 w-8 rounded-full border-2 flex items-center justify-center text-xs font-bold"
-                style={{ borderColor: '#C9A84C', color: '#C9A84C' }}
-              >
-                GC
-              </div>
-              <span className="font-bold text-lg">The Golden Circle</span>
+            <div className="flex items-center gap-3 mb-4">
+              <img
+                src="/logo.png"
+                alt="The Golden Circle"
+                className="h-10 w-10 rounded-full object-cover border border-amber-400/50 shadow-sm"
+              />
+              <span className="font-bold text-lg text-white">The Golden Circle</span>
             </div>
-            <p className="text-sm" style={{ color: '#9CA3AF' }}>
-              Where Startups Meet Talent.
+            <p className="text-sm leading-relaxed text-neutral-300 max-w-sm">
+              The Golden Circle — Discovering the people, ideas and businesses building tomorrow.
             </p>
             <p className="text-xs mt-4" style={{ color: '#6B7280' }}>
               © {year} The Golden Circle. All rights reserved.

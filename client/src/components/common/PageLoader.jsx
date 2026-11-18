@@ -3,15 +3,14 @@ import Spinner from '../ui/Spinner';
 export default function PageLoader() {
   return (
     <div className="min-h-[70vh] flex flex-col items-center justify-center gap-3 bg-neutral-50/50">
-      <div
-        className="h-10 w-10 rounded-full border-2 flex items-center justify-center text-xs font-bold animate-pulse"
-        style={{ borderColor: '#C9A84C', color: '#C9A84C', backgroundColor: 'rgba(201,168,76,0.08)' }}
-      >
-        GC
-      </div>
+      <img
+        src="/logo.png"
+        alt="The Golden Circle"
+        className="h-14 w-14 rounded-full object-cover shadow-md border border-amber-400/50 animate-pulse"
+      />
       <Spinner size="md" />
-      <span className="text-xs text-neutral-400 font-medium tracking-wide">
-        Loading Golden Circle Platform...
+      <span className="text-xs text-neutral-500 font-medium tracking-wide text-center px-4">
+        The Golden Circle — Discovering the people, ideas and businesses building tomorrow.
       </span>
     </div>
   );

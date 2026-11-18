@@ -2,8 +2,8 @@ import { useEffect } from 'react';
 
 export default function SEO({
   title,
-  description = 'The Golden Circle is the invite-only startup ecosystem platform where high-growth founders, vetted talent, and elite angel syndicates connect.',
-  image = '/assets/og-image.png',
+  description = 'The Golden Circle — Discovering the people, ideas and businesses building tomorrow.',
+  image = '/logo.png',
   type = 'website',
   url = window.location.href,
 }) {
@@ -11,7 +11,7 @@ export default function SEO({
     // Set document title
     const formattedTitle = title
       ? `${title} | The Golden Circle`
-      : 'The Golden Circle | Where Startups Meet Talent & Capital';
+      : 'The Golden Circle — Discovering the people, ideas and businesses building tomorrow.';
     document.title = formattedTitle;
 
     // Helper to update or create meta tag

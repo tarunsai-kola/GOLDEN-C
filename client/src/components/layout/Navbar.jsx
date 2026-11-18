@@ -74,12 +74,11 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center justify-between">
         <div className="flex items-center gap-6">
           <Link to="/" className="flex items-center gap-2.5">
-            <div
-              className="h-8 w-8 rounded-full border-2 flex items-center justify-center text-xs font-bold"
-              style={{ borderColor: '#C9A84C', color: '#C9A84C' }}
-            >
-              GC
-            </div>
+            <img
+              src="/logo.png"
+              alt="The Golden Circle"
+              className="h-9 w-9 rounded-full object-cover border border-amber-400/40 shadow-xs"
+            />
             <span className="font-bold text-lg text-gray-900 hidden sm:block">
               The Golden Circle
             </span>

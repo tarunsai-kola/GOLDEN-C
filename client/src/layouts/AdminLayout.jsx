@@ -95,12 +95,11 @@ export default function AdminLayout() {
           {/* Brand & Console Title */}
           <div className="p-6 border-b border-white/10 flex items-center justify-between">
             <Link to="/admin" className="flex items-center gap-3">
-              <div
-                className="h-9 w-9 rounded-full border-2 flex items-center justify-center text-xs font-bold shadow-xs"
-                style={{ borderColor: '#C9A84C', color: '#C9A84C', backgroundColor: 'rgba(201,168,76,0.1)' }}
-              >
-                GC
-              </div>
+              <img
+                src="/logo.png"
+                alt="The Golden Circle"
+                className="h-9 w-9 rounded-full object-cover border border-amber-400/50 shadow-xs"
+              />
               <div>
                 <span className="font-bold text-sm tracking-wide text-white block">
                   The Golden Circle

@@ -4,7 +4,14 @@ import Button from '../components/ui/Button';
 export default function NotFound() {
   return (
     <div className="min-h-[70vh] flex flex-col items-center justify-center px-4 text-center">
-      <div className="text-9xl font-bold mb-4" style={{
+      <Link to="/" className="mb-6">
+        <img
+          src="/logo.png"
+          alt="The Golden Circle"
+          className="h-16 w-16 rounded-full object-cover shadow-md border border-amber-400/50 hover:scale-105 transition"
+        />
+      </Link>
+      <div className="text-8xl sm:text-9xl font-extrabold mb-4" style={{
         backgroundImage: 'linear-gradient(135deg, #C9A84C, #E8C97A)',
         WebkitBackgroundClip: 'text',
         WebkitTextFillColor: 'transparent',

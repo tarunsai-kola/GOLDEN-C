@@ -42,16 +42,23 @@ export default function Home() {
   return (
     <>
       {/* ── Hero ── */}
-      <section className="min-h-[85vh] flex flex-col items-center justify-center px-4 text-center bg-[#FAFAF8]">
-        {/* Announcement badge */}
-        <div className="mb-6 inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-medium border"
-          style={{ borderColor: '#E8C97A', backgroundColor: '#FFFDF5', color: '#A07830' }}>
-          🚀 The Future of Startup Ecosystems
+      <section className="min-h-[85vh] flex flex-col items-center justify-center px-4 text-center bg-[#FAFAF8] py-16">
+        {/* Logo and Announcement */}
+        <div className="mb-6 flex flex-col items-center">
+          <img
+            src="/logo.png"
+            alt="The Golden Circle"
+            className="w-24 h-24 sm:w-28 sm:h-28 rounded-full object-cover shadow-xl border-2 border-amber-400/60 mb-4"
+          />
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-semibold border"
+            style={{ borderColor: '#E8C97A', backgroundColor: '#FFFDF5', color: '#A07830' }}>
+            🚀 The Golden Circle
+          </div>
         </div>
 
         {/* Headline */}
-        <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight leading-tight mb-6">
-          <span style={{ color: '#1A1A2E' }}>Where Startups</span>
+        <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight mb-6 max-w-4xl">
+          <span style={{ color: '#1A1A2E' }}>The Golden Circle</span>
           <br />
           <span style={{
             backgroundImage: 'linear-gradient(135deg, #C9A84C, #E8C97A, #A07830)',
@@ -59,14 +66,14 @@ export default function Home() {
             WebkitTextFillColor: 'transparent',
             backgroundClip: 'text',
           }}>
-            Meet Talent
+            Discovering the people, ideas and businesses building tomorrow.
           </span>
         </h1>
 
         {/* Subtitle */}
-        <p className="max-w-2xl text-lg sm:text-xl mb-10" style={{ color: '#6B6860' }}>
-          Discover innovative startups, connect with founders, find your dream role,
-          and build the future together.
+        <p className="max-w-2xl text-base sm:text-lg mb-10 leading-relaxed" style={{ color: '#6B6860' }}>
+          Connect with visionary founders, explore groundbreaking ventures, showcase your talent,
+          and participate in the curated ecosystem shaping what comes next.
         </p>
 
         {/* CTAs */}

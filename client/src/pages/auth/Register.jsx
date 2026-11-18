@@ -93,12 +93,24 @@ export default function Register() {
 
   return (
     <div className="w-full max-w-md mx-auto py-2">
+      {/* Mobile brand header */}
+      <div className="lg:hidden text-center mb-6">
+        <Link to="/" className="inline-flex flex-col items-center gap-2">
+          <img
+            src="/logo.png"
+            alt="The Golden Circle"
+            className="w-16 h-16 rounded-full object-cover border-2 border-amber-400/50 shadow-md"
+          />
+          <span className="font-bold text-gray-900 text-sm tracking-wide">The Golden Circle</span>
+        </Link>
+      </div>
+
       <div className="text-center mb-6">
         <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-gray-900">
           Create an Account
         </h2>
         <p className="text-sm text-neutral-600 mt-1">
-          Join the premier ecosystem connecting startups and talent
+          Discovering the people, ideas and businesses building tomorrow.
         </p>
       </div>
 
